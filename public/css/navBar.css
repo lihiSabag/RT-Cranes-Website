@@ -1,0 +1,351 @@
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar-wrapper {
+  background-color: #3333336e; /* Set your desired background color */
+  padding: 5px; /* Add padding to create space between the content and the rectangle */
+  display: flex;
+  
+  position: fixed; /* Set the header to be fixed */
+  top: 0; /* Position it at the top of the viewport */
+  right:  0;
+  left: 0;
+  max-height: 10vh;
+  direction: rtl;
+  width: 100%;
+
+}
+
+.navbar {
+  padding: 20px 30px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items to the right */
+  
+ 
+}
+
+
+.navbar .icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+
+
+}
+
+/* Adjust the font size for the language switcher buttons */
+
+.navbar .language-switcher a {
+  appearance: none;
+  outline: none;
+  display: inline;
+  background: none;
+  border-radius: 50%;
+  padding-left: 10px;
+}
+.navbar .language-switcher a :hover {
+  border:solid #e2c068 ;
+  border-radius: 50%;
+}
+.navbar ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar ul li a {
+  position: relative;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  /* text-transform: uppercase; */
+  font-family:' Calibri', sans-serif;
+  font-weight: lighter;
+  cursor: pointer;
+
+}
+
+.navbar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #e2c068;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+}
+.navbar ul li a:hover {
+  color: #e2c068; /* Change the color to your desired hover color */
+}
+
+.navbar-logo{
+  width: 10%;
+  display:inline-flex;
+  justify-content: flex-end;
+}
+img.scale-with-grid, #Content img {
+ 
+  
+}
+#logo img {
+  max-height: 100%;
+}
+.navbar-mobile-wrapper{
+  
+  display:none;
+}
+.navbar-mobile-content-wrapper{
+  display:none;
+
+}
+
+.menu-link.active {
+  color:  #e2c068;
+}
+
+/* Style for the inactive links */
+.menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .navbar ul li a {
+   
+    font-size: 18px;
+  
+  }
+  .navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+  }
+  .navbar {
+    padding: 5px 5px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-mobile-wrapper{
+  
+    display:none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0px 0px;
+  }
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  .navbar .icon {
+    width: 20px;
+    height: 20px;
+    
+  }
+  .navbar-mobile-wrapper{
+    display: none;
+  }
+}
+@media (max-width: 662px) {
+  .navbar ul li a {
+   
+    font-size: 16px;
+  
+  }
+
+  .navbar {
+    padding: 30px 0px 30px 0px;
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the right */
+  }
+  .navbar ul  {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+  }
+  img.scale-with-grid, #Content img {
+    display: none;
+  }
+  #logo img {
+    display: none;
+  }
+
+  .navbar-logo {
+    display: none;
+  }
+  .navbar .language-switcher  {
+
+    padding-left: 5px;
+  
+  }
+
+}
+@media (max-width: 490px) {
+  .navbar-wrapper {
+    display:none;
+  }
+  .navbar-mobile-wrapper{
+    background-color: #3333336e; /* Set your desired background color */
+    display: flex;
+    position: fixed; /* Set the header to be fixed */
+    top: 0; /* Position it at the top of the viewport */
+    right:  0;
+    left: 0;
+    padding-bottom: 20px;
+    z-index: 100; /* Ensure it appears above other content */
+    padding: 20px 30px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .navbar-mobile-wrapper .language-switcher  {
+
+    padding-left: 0px;
+    padding-right: 0px;
+    display:inline-flex;
+
+    justify-content: flex-end;
+    width: 30%;
+    /* display:inline-flex;
+    justify-content: flex-end; */
+  
+  }
+  .navbar-mobile-wrapper .icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .navbar-mobile-wrapper a{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .menu-icon {
+    width: 70%;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+  .menu-icon.close {
+    
+    padding-top: 20px;
+  }
+  .menu-icon i {
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: 10px;
+    color: #ffffff; /* Adjust the color as needed */
+
+  }
+  .navbar-mobile-content-wrapper{
+    background-color: #333333d7; /* Set your desired background color */
+    display: flex;
+    justify-content: flex-start; /* Center the content horizontally */
+    z-index: 100; /* Ensure it appears above other content */
+    position: fixed; /* Set the header to be fixed */
+    top: 0; /* Position it at the top of the viewport */
+    right:  0;
+    left: 0;
+    height: 100%;
+    direction: rtl;
+    display: none;
+
+
+  }
+  .navbar-mobile-content-wrapper i.fa-bars::content{
+  padding: 25px; /* Add padding to create space between the content and the rectangle */
+  }
+
+  .navbar-mobile{
+    flex-direction: column; 
+    align-items: center; 
+    gap: 60px;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    direction: rtl;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+    padding: 50px;
+  }
+
+  .navbar-mobile ul {
+    list-style: none;
+    padding: 40px;
+  }
+  .navbar-mobile ul li {
+    display:grid;
+    margin: 20 10px;
+    position: relative;
+    
+  } 
+
+  .navbar-mobile ul li a {
+    position: relative;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px;
+
+  }
+  .navbar .language-switcher  {
+
+    padding-left: 0px;
+    padding-right: 0px;
+  
+  }
+  
+  .navbar-mobile ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    color: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+  }
+  
+  .navbar ul li:hover:after {
+    width: 100%;
+  }
+  .navbar-mobile ul li a:hover {
+    color:rgb(64, 64, 231);
+  }
+
+  .menu-link.active {
+    color: yellow;
+  }
+  
+  /* Style for the inactive links */
+  .menu-link {
+    color: white;
+    text-decoration: none;
+  }
+
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/cranesCatalog.css" />
+  </head>
+  <header><%- include('../partials/header') %></header>
+  <body>
+    <section class="sub-header">
+      <h1>מנופים להשכרה</h1>
+      <p style="text-align: center">
+        <a class="link" href="/homePage">דף הבית</a>&gt
+        <a class="link"> קטלוג מנופים </a>
+      </p>
+    </section>
+    <section class="service-container">
+      <h2>קטלוג מנופים להשכרה</h2>
+
+      <!-- Grid container for catalog items -->
+      <div class="catalog-grid">
+        <!-- Line 1 -->
+
+        <div class="catalog-item">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT8100.png" alt="GRT8100" />
+          </div>
+
+          <div class="catalog-item-title">
+            <a href="/itemGRT8100">GRT8100</a>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog-item-content">
+            <img src="/assets/RT765E.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">RT765E</div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog-item-content">
+            <img src="/assets/RT530E.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">RT530E</div>
+        </div>
+        <!-- Line 2 -->
+
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+
+        <!-- Line 3 -->
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+      </div>
+
+      <p style="text-align: center">
+        <a
+          class="button"
+          href="javascript:void(0);"
+          onclick="toggleHiddenRows()"
+        >
+          &lt; לקטלוג המלא
+        </a>
+      </p>
+    </section>
+    <footer><%- include('../partials/footer') %></footer>
+  </body>
+  <script>
+    setActivePage("catalog");
+    function toggleHiddenRows() {
+      const hiddenRows = document.querySelectorAll(".catalog-item.hidden");
+
+      // Toggle the display property for each hidden row
+      hiddenRows.forEach((item) => {
+        console.log("diddddd", item.style.display);
+
+        if (item.style.display === "none" || item.style.display === "") {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    }
+  </script>
+</html>

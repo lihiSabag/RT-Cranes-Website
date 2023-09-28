@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+}
+.video-overlay {
+  background-color: rgba(17, 27, 29, 0.443);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+.navbar .logo{
+	color: white;
+	font-size: 45px;
+	letter-spacing: 1px;
+	
+}
+#logo-nav{
+  cursor: pointer;
+  font-size: 45px;
+}
+#logo-nav::after{
+  content: "";
+  background: none;
+}
+#logo-nav:hover:after{
+  font-size: 45px;
+ 
+} 
+/* home page */
+.banner {
+  height: 100vh;
+  width: 100%;
+}
+.content {
+  /* padding: 20px; */
+  width: 100%;
+
+  position: absolute;
+  top: 85%;
+  /* left: 50%; */
+  transform: translateY(-50%);
+  text-align: center;
+  background-color: #06050586;
+
+}
+h1 {
+  color: #e2c068;
+  margin: 20px 0px 0px;
+  font-size: 75px;
+  font-family: "Alef Hebrew";
+
+}
+h3 {
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 35px;
+
+  /* margin-bottom: 50px; */
+  font-family: "Alef Hebrew";
+
+}
+
+span {
+  color: #adaf4f;
+  font-family: "Alef Hebrew";
+
+}
+
+
+button {
+  position: relative;
+  top: 20px;
+  background-color: #2f7272;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 3px;
+  transition: 0.4s;
+  font-family: "Alef Hebrew";
+
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid #2f7272;
+  cursor: pointer;
+}
+/* home page- end banner */
+
+/* home page-about section */
+.about {
+  /* position: relative; */
+  width: 100%;
+  height: 400px;
+  background: #1d1d1d56;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  
+}
+
+.about-text {
+  width: 550px;
+  font-family: "Alef Hebrew";
+  text-align: right;
+
+
+}
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+.about-text h2 {
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-family: "Alef Hebrew";
+  text-align: right;
+
+
+}
+.about-text h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-family: "Alef Hebrew";
+  text-align: right;
+
+
+}
+.about-text p {
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 28px;
+  margin-bottom: 45px;
+  font-family: "Alef Hebrew";
+  text-align: right;
+
+}
+
+/* End home page-about section */
+
+/* home page-services */
+.service-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service {
+  position: relative;
+  width: 100%;
+  max-height: 90%;
+  /* height: 400px ;*/
+  background: #101010;
+  align-items: center;
+  /* justify-content: center; */
+  /* display: flex; */
+  align-items: center;
+  /* justify-content: space-around; */
+
+  width: 100%;
+  padding: 100px 0px;
+}
+.title h2 {
+  position: relative;
+  top: 50px;
+  align-items: center;
+  color: white;
+  font-size: 60px;
+  font-family: "Josefin Sans";
+  width: 1000px;
+  margin: 10px auto;
+  text-align: center;
+}
+.service .title h2 {
+  position: relative;
+  top: 0px;
+  align-items: center;
+  color: white;
+  font-size: 60px;
+  font-family: "Josefin Sans";
+  width: 1000px;
+  margin: 10px auto;
+  text-align: center;
+}
+.services-box {
+  position: relative;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.service-card {
+  height: 365px;
+  width: 335px;
+  padding: 40px 20px;
+  background: #191919;
+  border-radius: 20px;
+  margin: 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.service-card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #2f7272;
+}
+h5 {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+.pra p {
+  color: #2f7272;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+  text-align: right;
+
+}
+.service-card .button {
+  background-color: #2f7272;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 25px;
+  justify-content: center;
+  border-radius: 30px;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.service-card .button:hover {
+  background-color: transparent;
+  border: 2px solid #2f7272;
+  cursor: pointer;
+}
+/* End services */
+/* End home page */
+
+.main-section {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.end {
+  position: absolute;
+  color: #2f7272;
+  bottom: 35px;
+  font-size: 14px;
+}
+.about-container{
+  max-width: 80%;
+  align-items: center;
+  color: white;
+  margin-left: 100px;
+  text-align: right;
+  font-size: 25px;
+
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.aboutSlides {
+  width: 100%;
+  display: none;
+  background-color: #e9f4fb;
+  vertical-align: middle;
+
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}

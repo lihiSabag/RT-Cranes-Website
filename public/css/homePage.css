@@ -1,0 +1,1598 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("http://fonts.googleapis.com/earlyaccess/alefhebrew.css");
+@import url(https://db.onlinewebfonts.com/c/9f9eb7c275998682141691bcc52f3109?family=Helvetica);
+@import url(https://db.onlinewebfonts.com/c/e89eb1cff9eb261b0d77a4dea27f1ef1?family=Helvetica+W01+Light);
+@import url(https://db.onlinewebfonts.com/c/c3ebc6b1a59605f4d31dd15902299601?family=Open+Sans+Hebrew+Light);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  font-family: "Alef Hebrew";
+
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-position: center;
+  z-index: -1;
+  /* Set a lower z-index to place it behind other content */
+}
+
+.video-overlay {
+  background-color: rgba(17, 27, 29, 0.588);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  /* Set a lower z-index to place it behind other content */
+
+}
+
+
+
+/* --------------- Banner section ----------------  */
+.banner {
+  height: 75vh;
+  width: 100%;
+}
+
+.center-icon {
+  text-align: center;
+}
+
+.icon-image {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100px;
+  height: auto;
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 35px;
+  font-family: "Open Sans Hebrew Light";
+
+
+}
+
+h3 {
+  font-size: 52px;
+  font-weight: bold;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+
+}
+
+
+
+.services-banner {
+
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.757);
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+.services-banner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* padding-left: 15%;
+  padding-right: 15%; */
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 20px;
+  font-family: "Alef Hebrew";
+  font-weight: 100;
+  font-size: 20px;
+
+}
+
+.service-banner-item {
+  margin-top: -50px;
+  border: 0.5px solid #d8d8d8;
+  box-shadow: 0 0 5px rgba(224, 216, 216, 0.342);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.757);
+  width: 350px;
+  padding-bottom: 20px;
+
+
+  /* direction: rtl; */
+
+}
+
+.service-banner-item-content {
+
+  /* text-align: right; */
+  height: 300px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+
+}
+
+
+.service-banner-item-content a {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  /* direction: rtl; */
+  margin-bottom: 0;
+
+}
+
+.service-banner-item-content p {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  /* direction: rtl; */
+  color: #f0f0f0;
+
+
+
+
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.service-banner-item:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  cursor: pointer;
+  border: 2px solid #ffeab7;
+
+
+}
+
+
+.service-banner-item-title {
+  font-size: 22px;
+  font-weight: 100;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+  top: -20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+
+}
+
+.service-banner-item-title h4 {
+  font-size: 26px;
+  font-weight: 100;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+  text-decoration: none;
+  /* direction: rtl; */
+
+}
+
+
+
+
+/* --------------- about Us section ----------------  */
+.about {
+  width: 100%;
+  /* padding: 78px 0px; */
+  background-color: rgba(0, 0, 0, 0.757);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  /* z-index: 1; */
+  position: relative;
+  display: flex;
+  justify-content: right;
+  /* align-items: center; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: auto;
+  /* direction: rtl; */
+
+}
+
+
+.about-text {
+  width: 100%;
+  line-height: 2.5;
+}
+
+.main {
+  float: right;
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #000000;
+  /* direction: rtl; */
+  /* justify-content: flex-end; */
+  /* float: right; */
+  padding-right: 30px;
+  padding-left: 35px;
+  padding-top: 20px;
+  padding-top: 100px !important;
+
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Alef Hebrew";
+  color: #2a3549;
+  text-decoration: none;
+  /* direction: rtl; */
+
+}
+
+
+.text-container h1 {
+  font-size: 52px;
+  font-family: "Alef Hebrew";
+  color: #dfdfdf;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  /* text-align: right; */
+}
+
+.about .bar {
+  text-align: start;
+  width: 116px;
+  height: 10px;
+  background-color: #e2c068;
+  margin: 3px 0;
+  position: relative;
+  margin: 0;
+  left: 0;
+}
+
+
+.about-text p {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 16px;
+  margin-bottom: 45px;
+
+  padding-top: 50px;
+  line-height: 30px;
+  /* direction: rtl; */
+  line-height: 2.2;
+  text-align: justify;
+  /* Justify the text */
+  font-family: "Open Sans Hebrew Light";
+
+}
+.about-text.eng p {
+  line-height: 1.5;
+  padding-top: 5px;
+  line-height: normal;
+  color: rgb(38, 38, 38);
+  font-family: 'Helvetica W01 Light';
+  letter-spacing: normal;
+  margin-bottom: 15px;
+   
+ font-size: 18px;
+
+}
+.img-container {
+  background-image: url("/assets/crane-background.jpeg");
+  background-position: center;
+  width: 100%;
+  padding: 0px;
+  background-color: rgba(0, 0, 0, 0.757);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  /* z-index: 1; */
+  position: relative;
+  display: flex;
+  justify-content: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+
+
+}
+
+
+/*------------------ clients section ---------------- */
+.clients {
+
+  background-size: cover;
+  background-position: center center;
+  padding: 0px;
+  text-align: center;
+  padding-top: 80px !important;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: rgb(242, 242, 242);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.clients h1 {
+  color: rgb(64, 64, 85);
+  font-weight: bold;
+}
+
+.clients .bar {
+  background-color: #e2c068;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  row-gap: 10px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 20px;
+  width: 80%;
+
+  gap: 30px;
+  justify-items: center;
+}
+
+.clients-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+  max-width: 150px;
+  max-height: 150px;
+
+
+}
+
+.clients-item-content {
+
+  /* text-align: right; */
+
+  cursor: pointer;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-item-content img {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+/* --------------- services section ----------------  */
+
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 20px;
+
+
+}
+
+.service-item {
+  border: 0.5px solid #d8d8d8;
+  box-shadow: 0 0 5px rgba(224, 216, 216, 0.342);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgb(242, 242, 242);
+  /* width: 350px; */
+  width: 400px;
+  padding-bottom: 20px;
+  /* direction: rtl; */
+  border: rgba(247, 247, 247);
+  border-radius: var(--rd, 5px);
+  bottom: 0;
+  box-shadow: var(0, 0 1px 4px rgba(0, 0, 0, .6));
+
+}
+
+.service-item-content {
+
+  /* text-align: right; */
+  height: 300px;
+  cursor: pointer;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+
+.service-item-content a {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  /* direction: rtl; */
+  margin-bottom: 0;
+
+}
+
+.service-item-content p {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  /* direction: rtl; */
+  color: rgb(59, 58, 58);
+  font-weight: 100;
+  padding-top: 15px;
+  text-align: justify;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.service-item-content.eng p {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  /* direction: rtl; */
+  color: rgb(59, 58, 58);
+  font-weight: 100;
+  padding-top: 15px;
+  text-align: start;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+
+
+
+.service-item-title {
+  font-size: 22px;
+  font-weight: 100;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+  top: -20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+
+}
+
+.service-item-title h4 {
+  font-size: 26px;
+  font-weight: 100;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+  text-decoration: none;
+  /* direction: rtl; */
+
+}
+
+.service-item-title.eng h4 {
+  font-size: 23px;
+  font-weight: 100;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+  text-decoration: none;
+  /* direction: rtl; */
+
+}
+
+.button {
+  background: #e2c068 !important;
+  color: black;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 7px 30px;
+  border-radius: 3px;
+  transition: 0.4s;
+  display: inline-block;
+  /* Add this line */
+  margin-right: 10px;
+  /* Add this line to create space between button and text */
+  font-size: 16px;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid #ffeab7;
+  cursor: pointer;
+}
+
+.services {
+
+  background-size: cover;
+  background-position: center center;
+  padding: 0px;
+  text-align: center;
+  padding-top: 80px !important;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.service-item-img {
+  /* background-color: #aeecfff1; */
+  border: 2px solid #f6f6f6;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(224, 216, 216, 0.342);
+  width: 400px;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-blend-mode: overlay;
+  background-color: #343434af;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+}
+
+
+#rent {
+  background-image: url("/assets/cranesRentalService.jpg");
+
+}
+
+#operator {
+
+  background-image: url("/assets/crane-operator.jpg");
+
+
+}
+
+#sale {
+  background-image: url("/assets/craneSalesService.jpg");
+}
+
+.services h1 {
+  margin-top: 10px;
+  font-size: 52px;
+  font-weight: bold;
+  font-family: "Alef Hebrew";
+  color: rgb(64, 64, 85);
+  letter-spacing: 0.2mm;
+}
+
+/* 30,45,59 */
+.bar {
+  text-align: center;
+  width: 116px;
+  height: 10px;
+  background-color: #e2c068;
+  margin: 3px 0;
+  position: relative;
+  margin: 10px 0px 52px 0;
+  /* left: 432px; */
+}
+
+/* Apply the hover effect */
+.service-item-img:hover {
+  /* border: 4px solid #e2c068;
+  transform: scale(1.1); */
+  filter: brightness(1.2);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+}
+
+
+/*-------------------- cranes catalog section --------------------*/
+.service-container {
+  align-items: center;
+  /* Vertically center */
+  justify-content: center;
+  /* Center the content horizontally */
+  background-size: cover;
+  background-position: center center;
+  padding: 0px;
+  text-align: center;
+  padding-top: 100px !important;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.757);
+  padding-bottom: 250px;
+  width: 100%;
+  background-image: url(https://www.ang.co.il/wp-content/uploads/2023/05/bg_catalog.jpg);
+}
+
+h1 {
+  font-size: 52px;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+  font-weight: 100;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+
+}
+
+.catalog-item.hidden {
+  display: none;
+}
+
+.catalog-item-content {
+  background-color: #000000a1;
+  border: 1px solid #b4af7d;
+  padding: 5px;
+  text-align: center;
+  /* width: 65.3%; */
+  box-shadow: 0 0 5px rgba(224, 216, 216, 0.342);
+
+}
+
+.catalog-item img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+.catalog-item-title {
+  margin-top: 15px;
+  font-size: 22px;
+  font-weight: 100;
+  font-family: Tahoma, sans-serif;
+  color: #e2c068;
+}
+
+.catalog-item-title a {
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: 100;
+  color: #e2c068;
+  text-decoration: none;
+  font-family: Tahoma;
+
+
+}
+
+.button {
+  background: #e2c068 !important;
+  color: black;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 7px 30px;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+
+
+button:hover {
+  background: transparent;
+  border: 2px solid #ffeab7;
+  cursor: pointer;
+}
+
+
+/*------------------ contact us section ---------------- */
+.contact {
+  padding-top: 100px !important;
+  padding-bottom: 80px;
+  background-color: #e2c068;
+  /* background-color: #ffe473; */
+
+
+}
+
+.contact h1 {
+  font-size: 52px;
+  font-weight: 500;
+  font-family: "calibri";
+  color: rgb(64, 64, 85);
+}
+
+.contact h4 {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "calibri";
+  color: rgb(64, 64, 85);
+  padding-bottom: 50px;
+  max-height: 80px;
+
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.info-container {
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  padding-top: 80px;
+  /* Sets padding equal to the height of the target element */
+
+}
+
+.info-container .info-form {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin-top: 0;
+  background-color: rgba(204, 214, 214, 0.318);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  text-align: start;
+  padding: 5px 30px 10px 30px;
+  /* Add some vertical padding to the container */
+
+
+}
+
+.contact .container {
+  display: flex;
+  flex-direction: row;
+  /* direction: rtl; */
+  /* align-items: center;
+  justify-content: center; */
+  justify-content: center;
+
+}
+
+.container p {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  /* Add margin to separate each paragraph */
+  font-size: 20px;
+  /* Adjust font size as needed */
+  color: rgb(64, 64, 85);
+  font-family: "calibri";
+
+}
+
+i {
+  color: rgb(64, 64, 85);
+
+  display: inline-flex;
+  /* margin-right: 10px;
+  margin-left: 10px; */
+  justify-content: start;
+
+}
+
+.contact .contact-form {
+  width: 80%;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+
+.contact .form-group {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.contact .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 0;
+}
+
+
+
+.contact .form-group textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+
+
+
+.contact .form-group.inline {
+  /* display: flex;  */
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  /* Adjust the width as needed */
+  box-sizing: border-box;
+
+}
+
+
+
+.contact .form-group.inline input,
+.contact .form-group.inline textarea {
+  /* padding-left: 30px; */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-left: 0;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact .form-group input {
+  width: calc(50% - 5px);
+  /* Adjust the width based on your preference */
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+
+
+.contact button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #384452;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+}
+
+.contact button:hover {
+  background-color: rgba(90, 99, 121, 0.668)
+}
+
+
+@media (max-width: 1350px) {
+  .banner {
+    height: 80vh;
+    width: 100%;
+  }
+  .services-banner-grid {
+    max-width: 90%;
+  }
+  .service-banner-item {
+
+    width: 310px;
+    padding-bottom: 20px;
+    /* direction: rtl; */
+
+  }
+
+  .service-banner-item-content p {
+
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+  }
+
+  .center-icon {
+    text-align: center;
+  }
+
+  .icon-image {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100px;
+    height: auto;
+  }
+
+  .content {
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+  }
+
+  h2 {
+
+    font-size: 28px;
+
+  }
+
+  .main {
+    width: 100%;
+
+  }
+
+  .img-container {
+    background-position: right;
+    background-size: cover;
+
+  }
+
+  .service-item {
+
+    width: 320px;
+    height: 650px;
+
+  }
+
+  .service-item-img {
+    width: 320px;
+    height: 250px;
+  }
+
+  .service-item-content {
+
+    box-shadow: 0 0 5px rgba(224, 216, 216, 0.342);
+    width: 260px;
+    height: 350px;
+
+  }
+
+  .service-item-content p {
+
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .service-item-content.eng {
+    /* height: 350px; */
+
+  }
+
+  .service-item-content.eng p {
+    height: 90%;
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 10px;
+
+  }
+
+  .info-container {
+
+    margin-left: 0px;
+
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    height: 70vh;
+    width: 100%;
+  }
+
+  .center-icon {
+    text-align: center;
+  }
+
+  .icon-image {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100px;
+    height: auto;
+  }
+
+  .content {
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: normal;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 18px;
+
+
+  }
+
+
+  .services-banner-grid {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    /* display: flex; */
+    gap: 20px;
+
+  }
+
+  .service-banner-item {
+
+    width: 230px;
+    width: 60%;
+    /* Adjust the width for even larger screens */
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: fit-content;
+
+  }
+
+  .service-banner-item-content {
+    /* width: 225px; */
+    height: 400px;
+  }
+
+  .service-banner-item {
+    margin-top: -50px;
+  }
+
+  .service-banner-item h4 {
+    font-size: 22px;
+  }
+
+  .service-banner-item-content p {
+    font-size: 18px;
+    padding-top: 0px;
+
+
+  }
+
+  .service-banner-item-content.eng p {
+    font-size: 16px;
+    padding-top: 0px;
+
+  }
+
+  .img-container {
+    display: none;
+  }
+
+  .about {
+
+    height: auto;
+
+  }
+
+  .main {
+    float: right;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #000000;
+    /* direction: rtl; */
+    /* justify-content: flex-end; */
+    /* float: right; */
+    padding-right: 30px;
+    padding-left: 35px;
+    padding-top: 20px;
+  }
+
+  .services-grid {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    /* display: flex; */
+    gap: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+  }
+
+  .service-item {
+    width: 100%;
+    height: 670px;
+  }
+
+  .service-item-content {
+    margin-top: 10px;
+    width: 100%;
+    height: 360px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  }
+
+  .service-item-img {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-blend-mode: overlay;
+    background-color: #343434af;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+  }
+
+  .service-item-content p {
+    padding-top: 0px;
+  }
+
+  .service-item-content.eng p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .service-item-title.eng {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  /* contact us */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+    row-gap: 30px;
+  }
+
+  .contact h1 {
+    font-size: 32px;
+
+  }
+
+  .contact h4 {
+    font-size: 22px;
+
+  }
+
+  .info-container {
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+
+  }
+
+  .contact .contact-form {
+    width: 350px;
+    margin-left: 10px;
+
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  .services-banner-grid {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .service-banner-item {
+    width: 450px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    height: 300px;
+
+  }
+
+  .service-banner-item-content {
+    /* width: 430px; */
+    height: 400px;
+  }
+
+  .service-banner-item {
+    margin-top: 0;
+  }
+
+  .service-banner-item-content p {
+
+    font-size: 20px;
+    padding-top: 0px;
+    font-weight: 100;
+
+  }
+
+  /* --------services ------------ */
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 60px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 20px;
+
+  }
+
+  .services-grid.eng {
+
+    font-size: 16px;
+
+  }
+
+  .service-item-img {
+    width: 100%;
+    height: 150px;
+
+  }
+
+  .service-item {
+
+    width: 100%;
+    padding-bottom: 5px;
+
+    height: 350px;
+
+
+  }
+
+  .service-item-content p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+
+  }
+
+  .service-item-content {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .service-item-title {
+    margin-top: -50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+  }
+
+  /* contact Us */
+  .contact h1 {
+    font-size: 32px;
+
+  }
+
+  .contact h4 {
+    font-size: 22px;
+    padding-bottom: 20px;
+
+
+  }
+
+  .info-container {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px 0px 10px 0px;
+    /* Add some vertical padding to the container */
+
+
+  }
+
+  .info-container .info-form {
+    width: 100%;
+
+
+
+  }
+
+  .contact .container {
+    display: grid;
+    gap: 50px;
+    /* flex-direction: row; */
+    /* direction: rtl; */
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+
+  .contact .contact-form {
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+
+  }
+
+  .contact .form-group {
+    margin-bottom: 0px;
+
+  }
+
+  h1 {
+    font-size: 42px;
+
+  }
+
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    row-gap: 10px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 20px;
+    width: 80%;
+
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .form-container {
+
+    width: 100%;
+  }
+  .about-text.eng p {
+    font-size: 16px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 490px) {
+
+  /* --------------- Banner section ----------------  */
+  .banner {
+    height: 50vh;
+    width: 100%;
+
+  }
+
+
+  .content {
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    top: 20%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 32px;
+
+  }
+
+  .service-banner-item {
+
+    width: 300px;
+    padding-bottom: 5px;
+    height: 320px;
+
+
+  }
+
+  .service-banner-item .button {
+
+    display: none;
+
+
+  }
+
+  .catalog-grid {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Arrange items in a column layout */
+    gap: 20px;
+    /* Add gap between items */
+
+  }
+
+  h1 {
+    font-size: 32px;
+
+  }
+
+  /* --------------- about Us section ----------------  */
+  .about {
+    width: 100%;
+    padding: 78px 0px;
+    flex-direction: column;
+    /* Arrange items in a column layout */
+    background-image: none;
+    height: auto;
+  }
+
+
+
+
+  .main {
+    float: right;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* direction: rtl; */
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 15px;
+
+  }
+
+
+
+
+
+
+  .about h5 {
+    font-size: 16px;
+
+  }
+
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 60px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 18px;
+
+  }
+
+  .services-grid.eng {
+
+    font-size: 16px;
+
+  }
+
+  .service-item-img {
+    width: 300px;
+    height: 250px;
+
+  }
+
+  .service-item {
+
+    width: 300px;
+    padding-bottom: 5px;
+
+
+  }
+
+
+  .service-item-content p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+
+  }
+
+  .service-item-content {
+    height: 250px;
+  }
+
+  .service-item-title {
+    margin-top: -50px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+  }
+
+  .contact {
+
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .contact .contact-form {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+
+  }
+
+  .contact h4 {
+    font-size: 18px;
+
+
+
+  }
+  .about-text.eng p {
+    font-size: 14px;
+  }
+}

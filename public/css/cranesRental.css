@@ -1,0 +1,116 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:900,300);
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: "Alef Hebrew";
+    background-image: url(https://www.ang.co.il/wp-content/uploads/2023/05/bg_catalog.jpg);
+
+}
+
+
+.sub-header{
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Center the content horizontally */
+  text-align: center;
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
+  background-color:#383838;
+  direction: rtl;
+  z-index: 100; /* Ensure it appears above other content */
+  margin-top: 93px;
+
+}
+.sub-header p {
+  color: rgba(255,255,255,0.6);;
+  margin-top: 10px; 
+}
+.sub-header p a{
+    color: rgba(255,255,255,0.6);;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    
+      
+}
+.link {
+  margin: 0 10px; /* Adjust the margin as needed to control the spacing */
+}
+
+.content{
+    width: 100%;
+    color: white; /* Set your desired text color */
+    text-align: center; /* Center-align the text horizontally */
+    display: flex;
+    justify-content: center; /* Center-align the text vertically */
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 80px auto 80px;
+    padding: 0 0px 20px;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 30%;
+    font-family: "Alef Hebrew";
+    text-align: right;
+
+
+
+  }
+  
+  
+  h1 {
+    
+    font-family: "Alef Hebrew";
+    color: #c9c9c9;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 0px;
+  }
+  h2 {
+    font-size: 38px;
+    font-weight: 50;
+    font-family: "Alef Hebrew";
+    color: #e2c068;
+  }
+  
+  
+.text-container p {
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: right;
+    
+  }
+  .button {
+    background: #e2c068!important;;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 7px 30px;
+    border-radius: 3px;
+    transition: 0.4s;
+    display: inline-block; /* Add this line */
+    margin-right: 10px; /* Add this line to create space between button and text */
+    
+  }
+  
+  button:hover {
+    background: transparent;
+    border: 2px solid #ffeab7;
+    cursor: pointer;
+  }
+  

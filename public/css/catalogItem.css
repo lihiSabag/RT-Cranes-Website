@@ -1,0 +1,196 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:900,300);
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@import url(https://db.onlinewebfonts.com/c/9f9eb7c275998682141691bcc52f3109?family=Helvetica);
+@import url(https://db.onlinewebfonts.com/c/e89eb1cff9eb261b0d77a4dea27f1ef1?family=Helvetica+W01+Light);
+@import url(https://db.onlinewebfonts.com/c/c3ebc6b1a59605f4d31dd15902299601?family=Open+Sans+Hebrew+Light);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans Hebrew Light";
+  /* background-color: #0a0a0a50; */
+  background-image: url(https://www.ang.co.il/wp-content/uploads/2023/05/bg_catalog.jpg);
+  direction: rtl;
+}
+.sub-header{
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Center the content horizontally */
+  text-align: center;
+  padding-top: 100px !important;
+  padding-bottom: 20px !important;
+  background-color:#383838;
+  /* direction: rtl; */
+  z-index: 100; /* Ensure it appears above other content */
+  margin-top: 93px;
+
+}
+.sub-header p {
+  color: rgba(255,255,255,0.6);;
+  margin-top: 10px; 
+}
+.sub-header p a{
+    color: rgba(255,255,255,0.6);;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+      
+}
+.link {
+  margin: 0 10px; /* Adjust the margin as needed to control the spacing */
+}
+
+.content{
+  
+  padding-top: 80px !important;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Add a shadow effect */
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  margin: 120px auto 0px;
+  background-color: rgba(204, 214, 214, 0.264);
+  padding: 0 0px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.075);
+  text-align: center;
+  padding-top: 50px;
+  max-height:50vh;
+}
+
+/* Style for the photo gallery container */
+.gallery {
+  display: flex;
+  overflow: hidden;
+  max-height: 50%;
+  width: 70%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  top: -150px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0 5px #f0f0f0;
+  -webkit-box-shadow: 0 0 0 1px #fcfad6;
+  -moz-box-shadow: 0 0 2 5px #f0f0f0;
+ /* background-color: #3c3c3c; */
+
+}
+
+/* Style for individual images */
+.gallery img {
+  width: 50%;
+  /* height: auto; */
+  transition: transform 0.5s;
+}
+
+/* Style for the slideshow effect */
+.gallery.active {
+  animation: slideshow 5s infinite alternate;
+}
+
+/* Style for navigation arrows */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+h1 {
+  font-size: 52px;
+  font-weight: 50;
+  font-family: "Alef Hebrew";
+  color: #e3e3e3;
+}
+h2 {
+  font-size: 38px;
+  font-weight: 50;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+}
+
+
+
+
+
+
+
+.container .crane-details {
+  align-items: center;
+  /* direction: rtl; */
+  top: -120px;
+  overflow: hidden;
+  max-height: 50%;
+  width: 70%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  top: -150px;
+  padding-top: 10px;
+}
+
+.crane-details .input-box {
+  height: 42px;
+  margin: 10px 0px;
+}
+/* תוית של הטופס */
+.input-box label {
+  /* margin: 10px; */
+  color: #dfdfdf;
+  flex-direction: row;
+  display: inline-block;
+  text-align: start;
+  width: 230px;
+  margin-top: 0px;
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.crane-details .input-box input {
+  height: 90%;
+  outline: none;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000000;
+  border: 1.5px solid #c7bebe;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  direction: ltr;
+  text-align: center;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #6c9da4;
+}
+
+.input-box.button input:hover {
+  position: static;
+  background: #6c9da4;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+    <title>Crane Rental</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/services.css" />
+  </head>
+  <header><%- include('../partials/header') %></header>
+  <body>
+    <section class="sub-header">
+      <!-- <h1>שירותי החברה </h1> -->
+      <p style="text-align: center">
+        <a class="link" href="/homePage">דף הבית</a>&gt
+        <a class="link">שירותים</a>
+
+      </p>
+    </section>
+    <section class="services">
+      <h1>שירותי החברה</h1>
+      <div class="bar"></div>
+      <div class="services-grid">
+        <div class="service-item">
+          <button
+          class="service-item-img"
+          id="rent"
+          onclick="window.location.href='/cranesRental'"
+        ></button>
+          <div
+            class="service-item-content"
+            onclick="window.location.href='/cranesRental'"
+          >
+            <div class="service-item-title"><h4>השכרת מנופים</h4></div>
+
+            <p>
+              בחברתנו ניתן להשכיר מנופים איכותיים ומקצועיים, בהתאמה מלאה לפרויקט
+              שלכם, לדרישות ולמבנה ולשטח , עם אפשרות להעמדת מפעיל לימי עבודה
+              לבחירתכם.
+            </p>
+          </div>
+          <a class="button" href="/cranesRental"> למידע נוסף &gt; </a>
+        </div>
+
+        <div class="service-item">
+          <button
+          class="service-item-img"
+          id="operator"
+          onclick="window.location.href='/operators'"
+        ></button>
+          <div
+            class="service-item-content"
+            onclick="window.location.href='/operators'"
+          >
+            <div class="service-item-title">
+              <h4>כח אדם ומפעילים</h4>
+            </div>
+
+            <p>
+              החברה מספקת כח אדם מקצועי בציוד מכני, כולל מפעילי צמ"ה, מנופאים,
+              שופלים, מלגזות מסתובבות, מחפרים ועוד. המפעילים שלנו בעלי ניסיון
+              עשיר המקפידים לפעול בהתאם לכל תקנות הבטיחות ופועלים בפריסה ארצית
+              ובזמינות גבוהה.
+            </p>
+          </div>
+          <a class="button" href="/operators"> למידע נוסף &gt; </a>
+        </div>
+
+        <div class="service-item">
+          <button
+            class="service-item-img"
+            id="sale"
+            onclick="window.location.href='/cranesSale'"
+          ></button>
+          <div
+            class="service-item-content"
+            onclick="window.location.href='/cranesSale'"
+          >
+            <div class="service-item-title"><h4>מכירת מנופים</h4></div>
+            <p>
+              החברה מחזיקה צי מנופים מסוג R.T למכירה. המנופים מיובאים ונבדקים על
+              ידנו . תוך מתן ייעוץ מפורט, הבנת הצרכים והדרישות והתאמת הציוד
+              שיאפשר לחברתכם להגיע לביצועים הטובים ביותר.
+            </p>
+          </div>
+          <a class="button" href="/cranesSale"> למידע נוסף &gt; </a>
+        </div>
+      </div>
+    </section>
+
+    <footer><%- include('../partials/footer') %></footer>
+  </body>
+  <script>
+
+
+    setActivePage("services");
+  </script>
+
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/homePage.css" />
+  </head>
+  <body
+    style="direction: ltr; font-size: 16px; font-family: 'Helvetica W01 Light'"
+  >
+    <section id="home-section">
+      <header><%- include('../partials/EnHeader') %></header>
+
+      <div class="video-container">
+        <video id="myVideo" autoplay muted loop playsinline>
+          <source src="/assets/crane-background-video.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="banner">
+        <div class="content">
+          <div class="center-icon">
+            <img
+              src="/assets/20-years-millenium-auto-dealership.png"
+              alt="Icon"
+              class="icon-image"
+            />
+          </div>
+          <h3>S.R CRANES</h3>
+          <h2>
+            Advanced Crane Works and Rentals Tailored to Your Project Needs
+          </h2>
+        </div>
+      </div>
+    </section>
+    <section id="banner-section" class="services-banner">
+      <!-- Grid container for catalog items -->
+      <div
+        class="services-banner-grid"
+        style="
+          font-size: 16px;
+          font-family: 'Helvetica W01 Light';
+          line-height: 1.6em;
+        "
+      >
+        <div class="service-banner-item">
+          <div
+            class="service-banner-item-content eng"
+            onclick="window.location.href='/cranesRental'"
+          >
+            <div class="service-banner-item-title"><h4>Cranes Rental</h4></div>
+
+            <p>
+              We offer a crane rental service tailored to your project, we
+              provide professional cranes that are fully adapted to meet your
+              project's specific requirements, including the structure and the
+              location. That's not all-We offer the option to hire a skilled
+              crane operator, ensuring your project runs smoothly and
+              efficiently.
+            </p>
+          </div>
+          <a class="button" href="/cranesRental">Learn More &gt;</a>
+        </div>
+
+        <div class="service-banner-item">
+          <div
+            class="service-banner-item-content eng"
+            onclick="window.location.href='/operators'"
+          >
+            <div class="service-banner-item-title">
+              <h4>Manpower & Operators</h4>
+            </div>
+
+            <p>
+              The company provides professional equipment operators, including
+              heavy mechanical ,crane, excavator, bulldozer ,power shovel
+              operators and more...<br />
+              Our operators are highly experienced, comply with all safety
+              regulations, and are available nationwide.
+            </p>
+          </div>
+          <a class="button" href="/operators">Learn More &gt;</a>
+        </div>
+
+        <div class="service-banner-item">
+          <div
+            class="service-banner-item-content eng"
+            onclick="window.location.href='/cranesSale'"
+          >
+            <div class="service-banner-item-title">
+              <h4>Cranes for Sale</h4>
+            </div>
+            <p>
+              Our company has a fleet of R.T. cranes that are currently
+              available for purchase. Our team takes the responsibility to
+              inspect every crane carefully before selling to ensure the highest
+              level of quality for our clients. We provide comprehensive
+              consultation to meet your specific needs and ensure optimal
+              performance. <br />
+            </p>
+          </div>
+          <a class="button" href="/cranesSale">Learn More &gt;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rest of the content in English -->
+
+    <section class="service-container" id="catalog-section">
+      <h1>Cranes Rental Catalog</h1>
+
+      <div class="catalog-grid">
+        <!-- Cranes catalog items -->
+
+        <!-- Line 1 -->
+        <div class="catalog-item">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT8100.png" alt="GRT8100" />
+          </div>
+          <div class="catalog-item-title">
+            <a href="/en_itemGRT8100">GRT8100</a>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog-item-content">
+            <img src="/assets/RT765E.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">RT765E</div>
+        </div>
+
+        <div class="catalog-item">
+          <div class="catalog-item-content">
+            <img src="/assets/RT530E.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">RT530E</div>
+        </div>
+
+        <!-- Line 2 -->
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+
+        <!-- Line 3 -->
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+
+        <div class="catalog-item hidden">
+          <div class="catalog-item-content">
+            <img src="/assets/GRT880.png" alt="GRT880" />
+          </div>
+          <div class="catalog-item-title">GRT880</div>
+        </div>
+      </div>
+
+      <p style="text-align: center">
+        <a
+          class="button"
+          id="full-catalog-button"
+          href="javascript:void(0);"
+          onclick="toggleHiddenRows()"
+        >
+          &lt; Show Full Catalog
+        </a>
+      </p>
+    </section>
+
+    <section class="about" id="about-section" style="direction: ltr">
+      <div class="main" style="background-color: #f7f7f7">
+        <div class="text-container">
+          <h1
+            style="
+              text-transform: uppercase;
+              color: rgb(64, 64, 85);
+              font-weight: 700;
+            "
+          >
+            About
+          </h1>
+          <div class="bar"></div>
+
+          <div
+            class="about-text eng"
+            style="
+              color: rgb(38, 38, 38);
+              font-family: 'Helvetica W01 Light';
+              letter-spacing: normal;
+              line-height: 1.5;
+              font-size: 18px;
+            "
+          >
+            <p>
+              <br><br>
+              S.R Cranes is a reputable crane company with over 20 years of
+              experience in the industry. We have been an integral part of many
+              major projects in Israel and offer customized Solutions and
+              services for Your Project including mobile and off-road crane
+              rental, lifting services, and professional manpower with
+              mechanical equipment such as crane operators, loaders, excavators,
+              and bulldozers. <br />
+            </p>
+
+            <h5>A Wide Range of Crane Options</h5>
+            <p>
+              We strive to constantly expand and upgrade our fleet of tools to
+              accommodate our wide range of customers. Our fleet of cranes
+              includes a variety of models with different lifting capacities,
+              reach capabilities, and specialized features.
+              <br />
+              <br />
+            </p>
+            <h5>Experienced Operators at Your Service</h5>
+            <p>
+              Our team consists of highly skilled and experienced operators who
+              are trained to handle even the most challenging crane operations.
+              With their expertise and attention to detail, you can trust that
+              your project will be executed flawlessly.
+              <br />
+              <br />
+            </p>
+            <h5>Flexible Rental Options</h5>
+            <p>
+              We offer flexible rental options to suit your budget and timeline.
+              Whether you need a crane for a few hours, days, or weeks, we have
+              competitive pricing plans that will meet your needs without
+              compromising on quality.
+              <br />
+              <br />
+            </p>
+            <h5>Focus on Safety</h5>
+
+            <p>
+              Safety is our top priority at S.R Cranes. We adhere to strict
+              safety protocols and conduct regular maintenance on our cranes to
+              ensure they are in optimal condition. You can have peace of mind
+              knowing that your project will be handled with utmost care and
+              professionalism.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-container" style="transform: scaleX(-1)">
+        <!-- <img src="/assets/crane-img-aboutUs.jpg" alt="GRT880"> -->
+      </div>
+    </section>
+    <section class="clients" id="clients-section">
+      <h1>CLIENTS</h1>
+      <div class="bar"></div>
+      <div class="clients-grid">
+        <div class="clients-item">
+          <div class="clients-item-content">
+            <img src="/assets/dankal-logo.png" class="icon" alt="דנקל" />
+          </div>
+        </div>
+
+        <div class="clients-item">
+          <div class="clients-item-content">
+            <img src="/assets/Olitsky-group-logo.png" class="icon" alt="דנקל" />
+          </div>
+        </div>
+
+        <div class="clients-item">
+          <div class="clients-item-content">
+            <img src="/assets/intel-logo.png" class="icon" alt="דנקל" />
+          </div>
+        </div>
+
+        <div class="clients-item">
+          <div class="clients-item-content">
+            <img src="/assets/ashdodo-port-logo.png" class="icon" alt="דנקל" />
+          </div>
+        </div>
+        <div class="clients-item">
+          <div class="clients-item-content">
+            <img src="/assets/SolelBone-logo.png" class="icon" alt="דנקל" />
+          </div>
+        </div>
+        <div class="clients-item">
+          <div class="clients-item-content">
+            <img src="/assets/telAviv-Logo.png" class="icon" alt="דנקל" />
+          </div>
+        </div>
+        <div class="clients-item">
+          <div class="clients-item-content">
+            <img src="/assets/IsraelElectric.png" class="icon" alt="דנקל" />
+          </div>
+        </div>
+        <div class="clients-item">
+          <div class="clients-item-content">
+            <img src="/assets/Danyacebus.png" class="icon" alt="דנקל" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services-section">
+      <h1 style="text-transform: uppercase">Services</h1>
+      <div class="bar"></div>
+      <div
+        class="services-grid eng"
+        style="font-size: 18px; font-family: 'Helvetica W01 Light'"
+      >
+        <div class="service-item">
+          <button
+            class="service-item-img"
+            id="rent"
+            onclick="window.location.href='/cranesRental'"
+          ></button>
+          <div
+            class="service-item-content eng"
+            onclick="window.location.href='/cranesRental'"
+          >
+            <div class="service-item-title eng"><h4>Cranes Rental</h4></div>
+            <p>
+              We offer a crane rental service tailored to your project, we
+              provide professional cranes that are fully adapted to meet your
+              project's specific requirements, including the structure and the
+              location. That's not all-We offer the option to hire a skilled
+              crane operator, ensuring your project runs smoothly and
+              efficiently.
+            </p>
+          </div>
+          <a class="button" href="/cranesRental">Learn More &gt;</a>
+        </div>
+
+        <div class="service-item">
+          <button
+            class="service-item-img"
+            id="operator"
+            onclick="window.location.href='/operators'"
+          ></button>
+          <div
+            class="service-item-content eng"
+            onclick="window.location.href='/operators'"
+          >
+            <div class="service-item-title eng">
+              <h4>Manpower & Operators</h4>
+            </div>
+            <p>
+              The company provides professional equipment operators, including
+              heavy mechanical ,crane, excavator, bulldozer ,power shovel
+              operators and more...<br />
+              Our operators are highly experienced, comply with all safety
+              regulations, and are available nationwide.
+            </p>
+          </div>
+          <a class="button" href="/operators">Learn More &gt;</a>
+        </div>
+
+        <div class="service-item">
+          <button
+            class="service-item-img"
+            id="sale"
+            onclick="window.location.href='/cranesSale'"
+          ></button>
+          <div
+            class="service-item-content eng"
+            onclick="window.location.href='/cranesSale'"
+          >
+            <div class="service-item-title eng"><h4>Cranes for Sale</h4></div>
+            <p>
+              Our company has a fleet of R.T. cranes that are currently
+              available for purchase. Our team takes the responsibility to
+              import and inspect every crane carefully before selling to ensure
+              the highest level of quality for our clients. We provide
+              comprehensive consultation to meet your specific needs and ensure
+              optimal performance.
+            </p>
+          </div>
+          <a class="button" href="/cranesSale">Learn More &gt;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact-section">
+      <div class="container">
+        <div class="info-container">
+          <div class="info-form">
+            <h1 id="name">Contact Details</h1>
+
+            <ul id="menu" class="menu">
+              <p id="city">
+                <i
+                  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i
+                >&nbsp;&nbsp; Rogozin 9, Ashdod, Israel
+              </p>
+              <p id="phone">
+                <i
+                  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i
+                >&nbsp;&nbsp; +972-50-9088120
+              </p>
+              <p>
+                <i
+                  class="fa fa-envelope-o fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i
+                >&nbsp;&nbsp; shaimanofin@gmail.com
+              </p>
+              <p id="time">
+                <i
+                  class="fa fa-clock-o fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i
+                >&nbsp;&nbsp; Sun-Thu, 8:00 AM - 7:00 PM
+              </p>
+            </ul>
+          </div>
+        </div>
+        <div class="form-container">
+          <h4 id="name">Or leave a message for any questions</h4>
+
+          <form class="contact-form" action="/send-email" method="post">
+            <div class="form-group inline">
+              <div class="form-group">
+                <label>Full Name:</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="*Full Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone Number:</label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  placeholder="*Phone"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="*Email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Message Content:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message content"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <%- include('../partials/enFooter') %>
+  </body>
+  <script>
+    function toggleHiddenRows() {
+      const hiddenRows = document.querySelectorAll(".catalog-item.hidden");
+      const btn = document.getElementById("full-catalog-button");
+      hiddenRows.forEach((item) => {
+        if (item.style.display === "none" || item.style.display === "") {
+          item.style.display = "block";
+          document.getElementById("full-catalog-button").innerHTML =
+            "&lt; Close Catalog";
+        } else {
+          item.style.display = "none";
+          const section = document.getElementById("catalog-section");
+          section.scrollIntoView({ behavior: "auto" });
+          document.getElementById("full-catalog-button").innerHTML =
+            "&lt; Full Catalog";
+        }
+      });
+    }
+  </script>
+</html>

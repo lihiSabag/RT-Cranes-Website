@@ -1,0 +1,248 @@
+<header>
+  <link rel="stylesheet" href="/css/navBar.css" type="text/css" />
+
+  <div class="navbar-wrapper" id="en-nav" style="direction: ltr">
+    <div class="navbar">
+      <div
+        class="language-switcher"
+        style="padding-left: 10px; padding-right: 15px"
+      >
+        <a onclick="switchLanguage('he')">
+          <img src="/assets/hw_icon.png" class="icon" alt="Hebrew Flag" />
+        </a>
+        <a onclick="switchLanguage('en')">
+          <img src="/assets/en_icon.png" class="icon" alt="English Flag" />
+        </a>
+      </div>
+
+      <ul>
+        <li>
+          <a
+            name="home-section"
+            class="menu-link"
+            href="/homePageEn#home-section"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            name="catalog-section"
+            class="menu-link"
+            href="/homePageEn#catalog-section"
+            >Cranes</a
+          >
+        </li>
+        <li>
+          <a
+            name="services-section"
+            class="menu-link"
+            href="/homePageEn#services-section"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            name="about-section"
+            class="menu-link"
+            href="/homePageEn#about-section"
+            >About</a
+          >
+        </li>
+
+        <li>
+          <a
+            name="contact-section"
+            class="menu-link"
+            href="/homePageEn#contact-section"
+            >Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-logo">
+      <a
+        id="logo"
+        href="https://www.google.co.il"
+        title="SRC | S.R Cranes"
+        data-height="80"
+        data-padding="0"
+      >
+        <img
+          class="logo-main scale-with-grid"
+          src="/assets/sr-logo.png"
+          alt="logo"
+          data-no-retina=""
+          style=""
+      /></a>
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="navbar-mobile-wrapper" >
+    <div class="menu-icon" onclick="toggleMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div
+      class="language-switcher"
+      style="padding-left: 10px; padding-right: 15px"
+    >
+      <a onclick="switchLanguage('he')">
+        <img src="/assets/hw_icon.png" class="icon" alt="Hebrew Flag" />
+      </a>
+      <a onclick="switchLanguage('en')">
+        <img src="/assets/en_icon.png" class="icon" alt="English Flag" />
+      </a>
+    </div>
+  </div>
+  <div class="navbar-mobile-content-wrapper" style="display: none">
+    <div class="menu-icon close" onclick="closeMenu()">
+      <i class="fa fa-times"></i>
+    </div>
+    <div class="navbar-mobile">
+      <ul>
+        <li>
+          <a
+            id="home"
+            name="home-section"
+            class="menu-link active"
+            onclick="scrollToSectionMobile('home-section')"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            name="catalog-section"
+            class="menu-link"
+            onclick="scrollToSectionMobile('catalog-section')"
+            >Cranes
+          </a>
+        </li>
+        <li>
+          <a
+            name="services-section"
+            class="menu-link"
+            onclick="scrollToSectionMobile('services-section')"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a
+            name="about-section"
+            class="menu-link"
+            onclick="scrollToSectionMobile('about-section')"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            name="contact-section"
+            onclick="scrollToSectionMobile('contact-section')"
+            class="menu-link"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".navbar-mobile-content-wrapper");
+    const menuW = document.querySelector(".navbar-mobile-wrapper");
+
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+      menuW.style.display = "flex";
+    } else {
+      menu.style.display = "block";
+      menuW.style.display = "none";
+    }
+  }
+  function closeMenu() {
+    const menu = document.querySelector(".navbar-mobile-content-wrapper");
+    const menuW = document.querySelector(".navbar-mobile-wrapper");
+    console.log("menwW = ", menuW.style.display);
+    console.log("menu = ", menu.style.display);
+
+    if (menuW.style.display === "block" || menuW.style.display === "flex") {
+      menu.style.display = "block";
+      menuW.style.display = "none";
+    } else {
+      menu.style.display = "none";
+      menuW.style.display = "flex";
+    }
+    console.log("menwW = ", menuW.style.display);
+    console.log("menu = ", menu.style.display);
+  }
+  // function switchLanguage(language) {
+  //   console.log("en home");
+  //   console.log("languuu= ", language);
+  //   const currentPagePathname = window.location.pathname;
+
+  //   const htmlElement = document.querySelector("html");
+  //   console.log("lang= ",htmlElement.lang);
+  //   if (language === "en" && htmlElement.lang == "he") {
+  //     htmlElement.setAttribute("dir", "ltr");
+  //     homepageURL = currentPagePathname + "En"+window.location.hash;;
+  //     console.log("yes");
+  //     window.location.href = homepageURL;
+  //   } else if (language === "he" && htmlElement.lang == "en") {
+  //     htmlElement.setAttribute("dir", "ltr");
+  //     homepageURL = "/homePage";
+  //     //  homepageURL = currentPagePathname;
+  //     window.location.href = homepageURL;
+  //   } else if (language === "he" && htmlElement.lang == "he") {
+
+  //   } else if (language === "en" && htmlElement.lang == "en") {
+  //   } else if (language === "en") {
+  //     homepageURL = "/homePageEn";
+  //     window.location.href = homepageURL;
+  //   } else if (language === "he" ) {
+  //     homepageURL = "/homePage";
+  //     window.location.href = homepageURL;
+  //   }
+  //   else{
+  //     console.log("ELSE");
+  //   }
+
+  // }
+  function switchLanguage(language) {
+    const htmlElement = document.querySelector("html");
+    htmlElement.lang = language;
+
+    if (language === "he") {
+      htmlElement.setAttribute("dir", "rtl");
+      homepageURL = "/homePage";
+      window.location.href = homepageURL;
+    } else {
+      htmlElement.setAttribute("dir", "ltr");
+      homepageURL = "/homePageEn";
+      window.location.href = homepageURL;
+    }
+  }
+  function setActivePage(newPage) {
+    const currentPage = document.querySelector(".menu-link.active");
+    console.log(currentPage);
+    if (currentPage) {
+      currentPage.classList.remove("active");
+    }
+
+    const newPageLink = document.getElementsByName(newPage);
+    if (newPageLink[0]) {
+      newPageLink[0].classList.add("active");
+    }
+  }
+  function scrollToSectionMobile(sectionId) {
+    setActivePage(sectionId);
+
+    closeMenu();
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+  function scrollToSection(sectionId) {
+    setActivePage(sectionId);
+
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+</script>

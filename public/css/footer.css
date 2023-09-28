@@ -1,0 +1,313 @@
+footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px ;
+  bottom: 0;
+  width: 100%;
+  direction: rtl;
+  height: auto;
+}
+/* /* Define the grid container */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 50px; /* Gap between grid items */
+  max-width: 100%;
+  padding-top: 50px;
+  grid-auto-rows: 1fr; /* Set each footer-item to the same size */
+  justify-content: center;
+  justify-items: center;
+
+}
+.footer-item{
+
+  justify-items: center;
+  justify-content: center;
+
+}
+
+.footer-item-content a img{
+  width: 100%;
+  padding-left: 10px;
+}
+
+
+.footer-item-title {
+  margin-top: 10px;
+
+  text-align: start;
+}
+
+.footer-item-title a{
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  font-family: "Alef Hebrew";
+  color: #e2c068;
+  text-decoration: underline;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+  /* direction: rtl; */
+  display: flex;
+
+}
+
+.footer-item-content{
+  /* padding: 5px; */
+  text-align: start;
+  font-size: 22px;
+  font-weight: 100;
+  color: #ffffff;
+  /* direction: rtl; */
+  display: flex;
+  
+}
+
+/* Menu links inside the columns */
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+
+.footer-item-content a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size:18px;
+  font-family: "Alef Hebrew";
+  /* direction: rtl; */
+  display: flex;
+  margin-bottom: 10px; /* Add margin to separate each paragraph */
+
+
+}
+.footer-item-content p {
+  margin-bottom: 10px; /* Add margin to separate each paragraph */
+  font-size: 18px; /* Adjust font size as needed */
+  color: #fff;
+  font-family: "Alef Hebrew";
+  /* direction: rtl; */
+  display: flex;
+  
+}
+
+.footer-item-content i{
+  color: #fff!important;
+}
+
+
+
+
+@media (max-width: 1424px) {
+  /* Styles for tablets and smaller screens */
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr); /* 2 columns on tablets */
+    gap: 20px;
+    padding-right: 3%; 
+
+  }
+  .footer-item-content a img{
+    width: 50%;
+  }
+
+  img.scale {
+    margin-top: 10px;
+    max-height: 60%;
+    height: auto;
+  }
+  .footer-item-title {
+    margin-top: 10px;
+    text-align: start;
+  }
+  .footer-item-title a{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: "Alef Hebrew";
+    color: #e2c068;
+    text-decoration: underline;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+    display: flex;
+    /* direction: rtl; */
+    
+  }
+  .footer-item-content{
+    padding: 5px;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 100;
+    color: #ffffff;
+    display: flex;
+    /* direction: rtl; */
+    
+  }
+  .footer-item-content p {
+    margin-bottom: 10px; /* Add margin to separate each paragraph */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #fff;
+    font-family: "Alef Hebrew";
+    display: flex;
+    /* direction: rtl; */ 
+    font-size: 16px;
+    min-width: 300px;
+  }
+  .footer-item-content i{
+    color: #fff!important;
+    padding-left: 5px;
+  }
+  .footer-item-content a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size:16px;
+    font-family: "Alef Hebrew";
+    /* direction: rtl; */
+    display: flex;
+    margin-bottom: 10px; /* Add margin to separate each paragraph */
+
+  }
+}
+@media (max-width: 950px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    gap: 10px;
+    padding-right: 0; 
+
+  }
+.footer-item-content p {
+  margin-bottom: 10px; /* Add margin to separate each paragraph */
+  font-size: 14px; /* Adjust font size as needed */
+  color: #fff;
+  font-family: "Alef Hebrew";
+  display: flex;
+  /* direction: rtl; */ 
+  font-size: 16px;
+  min-width: 260px;
+}
+#services-footer{
+  width: 150px;
+}
+#ltd-footer{
+  width: 110px;
+}
+
+.footer-item-content a img.scale{
+  max-width: 70px;  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(3,  1fr);
+    gap: 10px;
+
+  }
+  .footer-item-content p{
+    width: fit-content;
+  }
+  .footer-item-content a img.scale{
+    max-width: 100px;  }
+
+  img.scale {
+    margin-top: 10px;
+    max-height: 60%;
+    height: fit-content;
+    max-width: 100%;
+    padding-left: 10px;
+  }
+  .footer-item-title {
+    margin-top: 10px;
+    text-align: start;
+  }
+  .footer-item-title a{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: "Alef Hebrew";
+    color: #e2c068;
+    text-decoration: underline;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+    display: flex;
+    /* direction: rtl; */
+    
+  }
+  .footer-item-content{
+    padding: 5px;
+    text-align: start;
+    font-weight: 100;
+    color: #ffffff;
+    display: flex;
+    /* direction: rtl; */
+    font-size: 14px;
+    
+  }
+  .footer-item-content p {
+    margin-bottom: 10px; /* Add margin to separate each paragraph */
+    font-size: 14px; /* Adjust font size as needed */
+    color: #fff;
+    font-family: "Alef Hebrew";
+    display: flex;
+    /* direction: rtl; */ 
+    min-width: 230px;
+  }
+  .footer-item-content i{
+    color: #fff!important;
+    padding-left: 5px;
+  }
+  .footer-item-content a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size:14px;
+    font-family: "Alef Hebrew";
+    /* direction: rtl; */
+    display: flex;
+  
+  }
+  #services-footer{
+    display: none;
+  }
+  #ltd-footer{
+    justify-content: end;
+    justify-items: end;
+  }
+  #footer-logo{
+    max-width:150px;
+
+  }
+}
+
+@media (max-width: 543px) {
+  footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px ;
+    bottom: 0;
+    width: 100%;
+    /* direction: rtl; */
+    height: auto;
+    height: auto;
+  }
+  .footer-grid {
+    padding-right: 15%; 
+    padding-left: 15%; 
+
+    display: flex;
+    flex-direction: column; /* Arrange items in a column layout */
+    align-items: start; /* Center items horizontally */
+    gap: 20px; /* Add gap between items */
+    max-width: 100%;
+    justify-content: center;
+    justify-items: center;
+  }
+  #services-footer{
+    display: none;
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../partials/head') %>
+    <title>Crane Information</title>
+    <link rel="stylesheet" href="/css/catalogItem.css" />
+  </head>
+  <header><%- include('../partials/enHeader') %></header>
+  <body style="direction: ltr;">
+    <section class="sub-header">
+      
+      <h1>Cranes Rental </h1>
+      <p style="text-align: center">
+        <a class="link" href="/homePageEn">Home</a>&gt;
+        <a class="link"  onclick="BackToCatalog()">Cranes Catalog </a>&gt;
+        <a class="link" style="cursor: default;"> GRT8100-1  </a>
+      </p>
+    </section>
+
+    <section class="content">
+            <h2>GROVE model GRT8100-1</h2>
+
+      <div class="container">
+        <div class="gallery">
+          <div class="mySlides ">
+            <div class="img-container">
+              <img src="/assets/GRT8100.png" alt="Image 1" />
+            </div>
+          </div>
+
+          <div class="mySlides ">
+            <div class="img-container">
+              <img src="/assets/RT530E.png" alt="Image 2" />
+            </div>
+          </div>
+          <div class="mySlides ">
+            <div class="img-container">
+              <img src="/assets/RT765E.png" alt="Image 3" />
+            </div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+
+        
+
+        <div class="crane-details">
+          <form class="details" id="details-form">
+            <div class="input-box">
+              <label for="max-capacity">Max capacity </label>
+              <input placeholder="100 t"readonly/>
+            </div>
+            <div class="input-box">
+              <label for="weight" >Total gross weight 
+              </label>
+              <input type="number"placeholder="57,220 kg"readonly/>
+            </div>
+            <div class="input-box">
+              <label for="boom-length" >Main boom length </label>
+              <input type="text"placeholder="12 m - 47 m" readonly />
+            </div>
+            <div class="input-box">
+              <label for="tip-height">Max tip height</label>
+              <input
+                type="number" placeholder="72.9 m"readonly/>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
+    <footer><%- include('../partials/footer') %></footer>
+  </body>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    function BackToCatalog(sectionId) {
+      window.history.back();
+  }
+
+
+  </script>
+</html>
