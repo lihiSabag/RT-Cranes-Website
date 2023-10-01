@@ -168,7 +168,7 @@ h3 {
   margin-top: 0;
   /* direction: rtl; */
   color: #f0f0f0;
-
+  font-size: 18px;
 
 
 
@@ -1260,7 +1260,7 @@ i {
 
   .service-banner-item-content p {
 
-    font-size: 20px;
+    font-size: 16px;
     padding-top: 0px;
     font-weight: 100;
 
