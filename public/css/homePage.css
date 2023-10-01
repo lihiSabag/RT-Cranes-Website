@@ -3,7 +3,7 @@
 @import url(https://db.onlinewebfonts.com/c/9f9eb7c275998682141691bcc52f3109?family=Helvetica);
 @import url(https://db.onlinewebfonts.com/c/e89eb1cff9eb261b0d77a4dea27f1ef1?family=Helvetica+W01+Light);
 @import url(https://db.onlinewebfonts.com/c/c3ebc6b1a59605f4d31dd15902299601?family=Open+Sans+Hebrew+Light);
-
+@import url(https://db.onlinewebfonts.com/c/0fb16d380d5f21f0b33ccfc113cde2a3?family=Open+Sans+Hebrew+Bold);
 * {
   margin: 0;
   padding: 0;
@@ -84,7 +84,7 @@ h2 {
 h3 {
   font-size: 52px;
   font-weight: bold;
-  font-family: "Open Sans Hebrew Light";
+  font-family:  "Open Sans Hebrew Bold";
   color: #e2c068;
 
 }
@@ -130,7 +130,7 @@ h3 {
   align-items: center;
   justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.757);
-  width: 350px;
+  width: 380px;
   padding-bottom: 20px;
 
 
@@ -202,7 +202,7 @@ h3 {
 .service-banner-item-title h4 {
   font-size: 26px;
   font-weight: 100;
-  font-family: "Open Sans Hebrew Light";
+  font-family:  "Open Sans Hebrew Bold";
   color: #e2c068;
   text-decoration: none;
   /* direction: rtl; */
@@ -255,7 +255,7 @@ h3 {
 h5 {
   font-size: 20px;
   font-weight: bold;
-  font-family: "Open Sans Hebrew Light";
+  font-family:  "Open Sans Hebrew Bold";
   color: #2a3549;
   text-decoration: none;
   /* direction: rtl; */
@@ -265,7 +265,7 @@ h5 {
 
 .text-container h1 {
   font-size: 52px;
-  font-family: "Open Sans Hebrew Light";
+  font-family:  "Open Sans Hebrew Bold";
   color: #dfdfdf;
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -485,6 +485,7 @@ h5 {
   padding-bottom: 30px;
   padding-right: 10px;
   padding-left: 10px;
+  font-family: "Open Sans Hebrew Light";
 }
 
 .service-item-content.eng p {
@@ -495,10 +496,11 @@ h5 {
   color: rgb(59, 58, 58);
   font-weight: 100;
   padding-top: 15px;
-  text-align: start;
+
   padding-bottom: 30px;
   padding-right: 10px;
   padding-left: 10px;
+  text-align: justify;
 }
 
 
@@ -518,7 +520,7 @@ h5 {
 .service-item-title h4 {
   font-size: 26px;
   font-weight: 100;
-  font-family: "Open Sans Hebrew Light";
+  font-family:  "Open Sans Hebrew Bold";
   color: #e2c068;
   text-decoration: none;
   /* direction: rtl; */
@@ -528,7 +530,7 @@ h5 {
 .service-item-title.eng h4 {
   font-size: 23px;
   font-weight: 100;
-  font-family: "Open Sans Hebrew Light";
+  font-family:  "Open Sans Hebrew Bold";
   color: #e2c068;
   text-decoration: none;
   /* direction: rtl; */
@@ -614,7 +616,7 @@ button:hover {
   margin-top: 10px;
   font-size: 52px;
   font-weight: bold;
-  font-family: "Open Sans Hebrew Light";
+  font-family:  "Open Sans Hebrew Bold";
   color: rgb(64, 64, 85);
   letter-spacing: 0.2mm;
 }
@@ -664,7 +666,7 @@ button:hover {
 
 h1 {
   font-size: 52px;
-  font-family: "Open Sans Hebrew Light";
+  font-family:  "Open Sans Hebrew Bold";
   color: #e2c068;
   font-weight: 100;
 }
