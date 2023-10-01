@@ -3,10 +3,7 @@
 
   <div class="navbar-wrapper" id="en-nav" style="direction: ltr">
     <div class="navbar">
-      <div
-        class="language-switcher"
-        style="padding-left: 10px; padding-right: 15px"
-      >
+      <div class="language-switcher" style="padding-left: 10px; padding-right: 15px">
         <a onclick="switchLanguage('he')">
           <img src="/assets/hw_icon.png" class="icon" alt="Hebrew Flag" />
         </a>
@@ -62,7 +59,7 @@
     <div class="navbar-logo">
       <a
         id="logo"
-        href="https://www.google.co.il"
+        href="https://rt-cranes.onrender.com"
         title="SRC | S.R Cranes"
         data-height="80"
         data-padding="0"
@@ -72,11 +69,11 @@
           src="/assets/sr-logo.png"
           alt="logo"
           data-no-retina=""
-          style=""
+          
       /></a>
     </div>
   </div>
-  <!--  -->
+ 
 
   <div class="navbar-mobile-wrapper" >
     <div class="menu-icon" onclick="toggleMenu()">
@@ -87,10 +84,10 @@
       style="padding-left: 10px; padding-right: 15px"
     >
       <a onclick="switchLanguage('he')">
-        <img src="/assets/hw_icon.png" class="icon" alt="Hebrew Flag" />
+        <img src="/assets/hw_icon.png" class="icon" alt="Hebrew language" />
       </a>
       <a onclick="switchLanguage('en')">
-        <img src="/assets/en_icon.png" class="icon" alt="English Flag" />
+        <img src="/assets/en_icon.png" class="icon" alt="English language" />
       </a>
     </div>
   </div>
@@ -161,8 +158,6 @@
   function closeMenu() {
     const menu = document.querySelector(".navbar-mobile-content-wrapper");
     const menuW = document.querySelector(".navbar-mobile-wrapper");
-    console.log("menwW = ", menuW.style.display);
-    console.log("menu = ", menu.style.display);
 
     if (menuW.style.display === "block" || menuW.style.display === "flex") {
       menu.style.display = "block";
@@ -171,41 +166,7 @@
       menu.style.display = "none";
       menuW.style.display = "flex";
     }
-    console.log("menwW = ", menuW.style.display);
-    console.log("menu = ", menu.style.display);
   }
-  // function switchLanguage(language) {
-  //   console.log("en home");
-  //   console.log("languuu= ", language);
-  //   const currentPagePathname = window.location.pathname;
-
-  //   const htmlElement = document.querySelector("html");
-  //   console.log("lang= ",htmlElement.lang);
-  //   if (language === "en" && htmlElement.lang == "he") {
-  //     htmlElement.setAttribute("dir", "ltr");
-  //     homepageURL = currentPagePathname + "En"+window.location.hash;;
-  //     console.log("yes");
-  //     window.location.href = homepageURL;
-  //   } else if (language === "he" && htmlElement.lang == "en") {
-  //     htmlElement.setAttribute("dir", "ltr");
-  //     homepageURL = "/homePage";
-  //     //  homepageURL = currentPagePathname;
-  //     window.location.href = homepageURL;
-  //   } else if (language === "he" && htmlElement.lang == "he") {
-
-  //   } else if (language === "en" && htmlElement.lang == "en") {
-  //   } else if (language === "en") {
-  //     homepageURL = "/homePageEn";
-  //     window.location.href = homepageURL;
-  //   } else if (language === "he" ) {
-  //     homepageURL = "/homePage";
-  //     window.location.href = homepageURL;
-  //   }
-  //   else{
-  //     console.log("ELSE");
-  //   }
-
-  // }
   function switchLanguage(language) {
     const htmlElement = document.querySelector("html");
     htmlElement.lang = language;
@@ -222,7 +183,6 @@
   }
   function setActivePage(newPage) {
     const currentPage = document.querySelector(".menu-link.active");
-    console.log(currentPage);
     if (currentPage) {
       currentPage.classList.remove("active");
     }

@@ -70,80 +70,7 @@
       /></a>
     </div>
   </div>
-  <!-- English navbar -->
-  <div class="navbar-wrapper" id="en-nav" style="display: none">
-    <div class="navbar">
-      <div class="language-switcher">
-        <a onclick="switchLanguage('he')">
-          <img src="/assets/hw_icon.png" class="icon" alt="Hebrew Flag" />
-        </a>
-        <a onclick="switchLanguage('en')">
-          <img src="/assets/en_icon.png" class="icon" alt="English Flag" />
-        </a>
-      </div>
 
-      <ul>
-        <li>
-          <a
-            name="home-section"
-            class="menu-link"
-            onclick="scrollToSection('home-section')"
-            >Home Page</a
-          >
-        </li>
-        <li>
-          <a
-            name="catalog-section"
-            class="menu-link"
-            onclick="scrollToSection('catalog-section')"
-            >Cranes Catalog</a
-          >
-        </li>
-        <li>
-          <a
-            name="services-section"
-            class="menu-link"
-            onclick="scrollToSection('services-section')"
-            >Services</a
-          >
-        </li>
-        <li>
-          <a
-            name="about-section"
-            class="menu-link"
-            onclick="scrollToSection('about-section')"
-            >About</a
-          >
-        </li>
-
-        <li>
-          <a
-            name="contact-section"
-            class="menu-link"
-            onclick="scrollToSection('contact-section')"
-            >Contact
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="navbar-logo">
-      <a
-        id="logo"
-        href="https://rt-cranes.onrender.com"
-        title="SRC | S.R Cranes"
-        data-height="80"
-        data-padding="0"
-      >
-        <img
-          class="logo-main scale-with-grid"
-          src="/assets/sr-logo.png"
-          alt="logo"
-          data-no-retina=""
-          style=""
-      /></a>
-    </div>
-  </div>
-  <!--  -->
 
   <div class="navbar-mobile-wrapper">
     <div class="menu-icon" onclick="toggleMenu()">
@@ -241,7 +168,6 @@
       htmlElement.lang = language;
   
       if (language === "he") {
-        
         htmlElement.setAttribute("dir", "rtl");
         homepageURL = "/homePage";
         window.location.href = homepageURL;
@@ -319,8 +245,6 @@
   }
 
   function scrollToSection(sectionId) {
-    console.log(window.location.href);
-    const curr = document.querySelector(".menu-link.active");
 
     setActivePage(sectionId);
 
