@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 @import url(https://db.onlinewebfonts.com/c/9f9eb7c275998682141691bcc52f3109?family=Helvetica);
 @import url(https://db.onlinewebfonts.com/c/e89eb1cff9eb261b0d77a4dea27f1ef1?family=Helvetica+W01+Light);
 @import url(https://db.onlinewebfonts.com/c/c3ebc6b1a59605f4d31dd15902299601?family=Open+Sans+Hebrew+Light);
@@ -17,7 +16,7 @@ html {
 
 body {
   direction: rtl;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
 
 }
 
@@ -85,7 +84,7 @@ h2 {
 h3 {
   font-size: 52px;
   font-weight: bold;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #e2c068;
 
 }
@@ -192,7 +191,7 @@ h3 {
 .service-banner-item-title {
   font-size: 22px;
   font-weight: 100;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #e2c068;
   top: -20px;
   padding-bottom: 20px;
@@ -203,7 +202,7 @@ h3 {
 .service-banner-item-title h4 {
   font-size: 26px;
   font-weight: 100;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #e2c068;
   text-decoration: none;
   /* direction: rtl; */
@@ -256,7 +255,7 @@ h3 {
 h5 {
   font-size: 20px;
   font-weight: bold;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #2a3549;
   text-decoration: none;
   /* direction: rtl; */
@@ -266,7 +265,7 @@ h5 {
 
 .text-container h1 {
   font-size: 52px;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #dfdfdf;
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -508,7 +507,7 @@ h5 {
 .service-item-title {
   font-size: 22px;
   font-weight: 100;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #e2c068;
   top: -20px;
   padding-bottom: 20px;
@@ -519,7 +518,7 @@ h5 {
 .service-item-title h4 {
   font-size: 26px;
   font-weight: 100;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #e2c068;
   text-decoration: none;
   /* direction: rtl; */
@@ -529,7 +528,7 @@ h5 {
 .service-item-title.eng h4 {
   font-size: 23px;
   font-weight: 100;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #e2c068;
   text-decoration: none;
   /* direction: rtl; */
@@ -615,7 +614,7 @@ button:hover {
   margin-top: 10px;
   font-size: 52px;
   font-weight: bold;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: rgb(64, 64, 85);
   letter-spacing: 0.2mm;
 }
@@ -665,7 +664,7 @@ button:hover {
 
 h1 {
   font-size: 52px;
-  font-family: "Alef Hebrew";
+  font-family: "Open Sans Hebrew Light";
   color: #e2c068;
   font-weight: 100;
 }
