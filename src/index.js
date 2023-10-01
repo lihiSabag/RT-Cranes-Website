@@ -63,7 +63,6 @@ app.get('/En', (req, res) => {
 });
 
 
-
 // Endpoint to handle form submission
 app.post('/send-email', (req, res) => {
   const { fullName, mobile, email, message } = req.body;
