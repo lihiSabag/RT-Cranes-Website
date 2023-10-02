@@ -60,7 +60,9 @@ app.post("/send-email", (req, res) => {
   const { fullName, mobile, email, message } = req.body;
   const myEmail = process.env.EMAIL;
   const password = process.env.PASSWORD;
-
+  console.log('Email:', myEmail);
+  console.log('Password:', password);
+  
   // Create a transporter using nodemailer
   const transporter = nodemailer.createTransport({
     service: "gmail",
