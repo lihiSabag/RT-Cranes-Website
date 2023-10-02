@@ -1599,7 +1599,7 @@ i {
     font-size: 14px;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 490px) {
   .bottom-menu{
     display: block;
     background-color: #e2c068;
