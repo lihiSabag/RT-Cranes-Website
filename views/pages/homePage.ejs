@@ -380,9 +380,17 @@
         </div>
         <div class="form-container">
           <h4 id="name">או השאירו הודעה ונשמח לסייע בכל שאלה</h4>
-          <div id="messageStatus" style="display: none;" >
-            <p   style="font-size:  22px;
-            color: rgb(255, 74, 74); padding-top: 0; padding-bottom: 20px;">פנייתך התקבלה בהצלחה! אנו נחזור אליך בהקדם האפשרי.</p>
+          <div id="messageStatus" style="display: none">
+            <p
+              style="
+                font-size: 22px;
+                color: rgb(255, 74, 74);
+                padding-top: 0;
+                padding-bottom: 20px;
+              "
+            >
+              פנייתך התקבלה בהצלחה! אנו נחזור אליך בהקדם האפשרי.
+            </p>
           </div>
           <form
             class="contact-form"
@@ -439,12 +447,40 @@
     </section>
 
     <%- include('../partials/footer') %>
+    <div class="bottom-menu">
+      <a href="tel:050-9088-120" class="bottom-menu-button" id="call-button">
+        <span class="bottom-menu-text-label-offset">
+          <i class="fa fa-phone"></i>
+        </span>
+      </a>
+      <a
+      href="/homePage#contact-section"
+        class="bottom-menu-button" id="email-button"
+      >
+        <span class="touchy-email-text-label-offset">
+          <i class="fa fa-envelope fa-fw"></i>
+        </span>
+      </a>
+      <a
+      onclick="sendMessageWhatsApp()"
+      class="bottom-menu-button" id="whatsApp-button"
+    >
+      <span class="touchy-email-text-label-offset">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </span>
+    </a>
+
+    </div>
+
     <script src="https://cdn.enable.co.il/licenses/enable-L22260wfos04j6vz-0923-50759/init.js"></script>
   </body>
   <script>
     // setActivePage("home");
 
-    document.getElementById("contact-form").addEventListener("submit", function (event) {event.preventDefault();
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
 
         // Submit the form using fetch
         fetch("/send-email", {
@@ -455,7 +491,8 @@
           .then((data) => {
             // Display the success message in the designated div
             const message = document.getElementById("messageStatus");
-            const successMessage ="פנייתך התקבלה בהצלחה! אנו נחזור אליך בהקדם האפשרי.";
+            const successMessage =
+              "פנייתך התקבלה בהצלחה! אנו נחזור אליך בהקדם האפשרי.";
             message.innerText = successMessage;
             message.style.display = "block"; // Show the success message
 
@@ -465,12 +502,19 @@
             console.error("Error:", error);
             const message = document.getElementById("messageStatus");
             message.innerText =
-            "אירעה שגיאה בעת שליחת האימייל. אנא נסה שוב מאוחר יותר.";
+              "אירעה שגיאה בעת שליחת האימייל. אנא נסה שוב מאוחר יותר.";
             message.style.display = "block"; // Show the error message
             clearFormInputs();
           });
       });
+      function sendMessageWhatsApp() {
+        const encodedMessage = encodeURIComponent('היי , הגעתי דרך האתר שלכם , אשמח ליצור קשר');
+        const phoneNumber = '+972509088120';  // Replace with the desired phone number
 
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+window.open(whatsappUrl, '_blank');
+}
     function clearFormInputs() {
       const form = document.getElementById("contact-form"); // Replace with your form ID
       const inputs = form.querySelectorAll("input");
