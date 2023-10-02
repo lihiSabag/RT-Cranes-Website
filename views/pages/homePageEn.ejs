@@ -433,7 +433,11 @@
         </div>
         <div class="form-container">
           <h4 id="name">Or leave a message for any questions</h4>
-
+          <div id="messageStatus" style="display: none;" >
+            <p   style="font-size:  22px;
+            color: rgb(255, 74, 74); padding-top: 0; padding-bottom: 20px;">Thank you for reaching out!<br> We'll get back to you as soon as possible.
+</p>
+          </div>
           <form class="contact-form" action="/send-email" method="post">
             <div class="form-group inline">
               <div class="form-group">
@@ -485,6 +489,48 @@
     <script src="https://cdn.enable.co.il/licenses/enable-L22260wfos04j6vz-0923-50759/init.js"></script>
   </body>
   <script>
+    document.getElementById("contact-form").addEventListener("submit", function (event) {event.preventDefault();
+
+// Submit the form using fetch
+fetch("/send-email", {
+  method: "POST",
+  body: new FormData(this),
+})
+  .then((response) => response.text())
+  .then((data) => {
+    // Display the success message in the designated div
+    const message = document.getElementById("messageStatus");
+    const successMessage =
+      "Thank you for reaching out! Your message has been successfully sent. We'll get back to you as soon as possible.";
+    message.innerText = successMessage;
+    message.style.display = "block"; // Show the success message
+
+    clearFormInputs();
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+    const message = document.getElementById("messageStatus");
+    message.innerText =
+      "An error occurred while sending the email. Please try again later.";
+    message.style.display = "block"; // Show the error message
+    clearFormInputs();
+  });
+});
+
+function clearFormInputs() {
+const form = document.getElementById("contact-form"); // Replace with your form ID
+const inputs = form.querySelectorAll("input");
+
+inputs.forEach((input) => {
+if (input.type !== "submit") {
+  input.value = "";
+}
+});
+
+// Clear the textarea
+const textarea = form.querySelector("textarea");
+textarea.value = "";
+}
     function toggleHiddenRows() {
       const hiddenRows = document.querySelectorAll(".catalog-item.hidden");
       const btn = document.getElementById("full-catalog-button");

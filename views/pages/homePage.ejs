@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="he">
   <head>
-    
-
-
     <%- include('../partials/head') %>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/css/homePage.css" />
   </head>
   <body>
@@ -31,7 +28,9 @@
             />
           </div>
           <h3>ש.ר מנופים</h3>
-          <h2>עבודות מנוף מתקדמות והשכרת מנופים ומפעילים בהתאמה מלאה לפרויקט שלכם</h2>
+          <h2>
+            עבודות מנוף מתקדמות והשכרת מנופים ומפעילים בהתאמה מלאה לפרויקט שלכם
+          </h2>
         </div>
       </div>
     </section>
@@ -70,7 +69,9 @@
               ובזמינות גבוהה.
             </p>
           </div>
-          <a class="button" href="/homePage#contact-section"> למידע נוסף &gt; </a>
+          <a class="button" href="/homePage#contact-section">
+            למידע נוסף &gt;
+          </a>
         </div>
 
         <div class="service-banner-item">
@@ -85,7 +86,9 @@
               שיאפשר לחברתכם להגיע לביצועים הטובים ביותר.
             </p>
           </div>
-          <a class="button" href="/homePage#contact-section"> למידע נוסף &gt; </a>
+          <a class="button" href="/homePage#contact-section">
+            למידע נוסף &gt;
+          </a>
         </div>
       </div>
     </section>
@@ -218,7 +221,11 @@
 
         <div class="clients-item">
           <div class="clients-item-content">
-            <img src="/assets/Olitsky-group-logo.png" class="icon" alt="קבוצת אוליצקי" />
+            <img
+              src="/assets/Olitsky-group-logo.png"
+              class="icon"
+              alt="קבוצת אוליצקי"
+            />
           </div>
         </div>
 
@@ -230,22 +237,38 @@
 
         <div class="clients-item">
           <div class="clients-item-content">
-            <img src="/assets/ashdodo-port-logo.png" class="icon" alt="נמל אשדוד" />
+            <img
+              src="/assets/ashdodo-port-logo.png"
+              class="icon"
+              alt="נמל אשדוד"
+            />
           </div>
         </div>
         <div class="clients-item">
           <div class="clients-item-content">
-            <img src="/assets/SolelBone-logo.png" class="icon" alt="סולל בונה" />
+            <img
+              src="/assets/SolelBone-logo.png"
+              class="icon"
+              alt="סולל בונה"
+            />
           </div>
         </div>
         <div class="clients-item">
           <div class="clients-item-content">
-            <img src="/assets/telAviv-Logo.png" class="icon" alt="עיריית תל אביב" />
+            <img
+              src="/assets/telAviv-Logo.png"
+              class="icon"
+              alt="עיריית תל אביב"
+            />
           </div>
         </div>
         <div class="clients-item">
           <div class="clients-item-content">
-            <img src="/assets/IsraelElectric.png" class="icon" alt="חברת חשמל" />
+            <img
+              src="/assets/IsraelElectric.png"
+              class="icon"
+              alt="חברת חשמל"
+            />
           </div>
         </div>
         <div class="clients-item">
@@ -302,7 +325,9 @@
               ובזמינות גבוהה.
             </p>
           </div>
-          <a class="button" href="/homePage#contact-section"> למידע נוסף &gt; </a>
+          <a class="button" href="/homePage#contact-section">
+            למידע נוסף &gt;
+          </a>
         </div>
 
         <div class="service-item">
@@ -322,7 +347,9 @@
               שיאפשר לחברתכם להגיע לביצועים הטובים ביותר.
             </p>
           </div>
-          <a class="button" href="/homePage#contact-section"> למידע נוסף &gt; </a>
+          <a class="button" href="/homePage#contact-section">
+            למידע נוסף &gt;
+          </a>
         </div>
       </div>
     </section>
@@ -335,35 +362,35 @@
 
             <ul id="menu" class="menu">
               <p id="city">
-                <i
-                  class="fa fa-home fa-fw "
-                ></i
-                >&nbsp;&nbsp; אשדוד , רוגוזין 9
+                <i class="fa fa-home fa-fw"></i>&nbsp;&nbsp; אשדוד , רוגוזין 9
               </p>
               <p id="phone">
-                <i
-                  class="fa fa-phone fa-fw "
-                ></i
-                >&nbsp;&nbsp; 050-9088120
+                <i class="fa fa-phone fa-fw"></i>&nbsp;&nbsp; 050-9088120
               </p>
               <p>
-                <i
-                  class="fa fa-envelope fa-fw "
-                ></i
-                >&nbsp;&nbsp; shai.manofin@gmail.com
+                <i class="fa fa-envelope fa-fw"></i>&nbsp;&nbsp;
+                shai.manofin@gmail.com
               </p>
               <p id="time">
-                <i
-                  class="fa fa-clock-o fa-fw " 
-                ></i
-                >&nbsp;&nbsp; א'-ה', 8:00 - 19:00
+                <i class="fa fa-clock-o fa-fw"></i>&nbsp;&nbsp; א'-ה', 8:00 -
+                19:00
               </p>
             </ul>
           </div>
         </div>
         <div class="form-container">
           <h4 id="name">או השאירו הודעה ונשמח לסייע בכל שאלה</h4>
-          <form class="contact-form" action="https://rt-cranes.onrender.com/send-email" method="post" enctype="text/plain">
+          <div id="messageStatus" style="display: none;" >
+            <p   style="font-size:  22px;
+            color: rgb(255, 74, 74); padding-top: 0; padding-bottom: 20px;">פנייתך התקבלה בהצלחה! אנו נחזור אליך בהקדם האפשרי.</p>
+          </div>
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="/send-email"
+            method="post"
+            enctype="text/plain"
+          >
             <div class="form-group inline">
               <div class="form-group">
                 <label for="fullName">שם מלא:</label>
@@ -413,11 +440,51 @@
 
     <%- include('../partials/footer') %>
     <script src="https://cdn.enable.co.il/licenses/enable-L22260wfos04j6vz-0923-50759/init.js"></script>
-   
   </body>
   <script>
     // setActivePage("home");
 
+    document.getElementById("contact-form").addEventListener("submit", function (event) {event.preventDefault();
+
+        // Submit the form using fetch
+        fetch("/send-email", {
+          method: "POST",
+          body: new FormData(this),
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            // Display the success message in the designated div
+            const message = document.getElementById("messageStatus");
+            const successMessage ="פנייתך התקבלה בהצלחה! אנו נחזור אליך בהקדם האפשרי.";
+            message.innerText = successMessage;
+            message.style.display = "block"; // Show the success message
+
+            clearFormInputs();
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            const message = document.getElementById("messageStatus");
+            message.innerText =
+            "אירעה שגיאה בעת שליחת האימייל. אנא נסה שוב מאוחר יותר.";
+            message.style.display = "block"; // Show the error message
+            clearFormInputs();
+          });
+      });
+
+    function clearFormInputs() {
+      const form = document.getElementById("contact-form"); // Replace with your form ID
+      const inputs = form.querySelectorAll("input");
+
+      inputs.forEach((input) => {
+        if (input.type !== "submit") {
+          input.value = "";
+        }
+      });
+
+      // Clear the textarea
+      const textarea = form.querySelector("textarea");
+      textarea.value = "";
+    }
     function toggleHiddenRows() {
       const hiddenRows = document.querySelectorAll(".catalog-item.hidden");
       const btn = document.getElementById("full-catalog-button");
