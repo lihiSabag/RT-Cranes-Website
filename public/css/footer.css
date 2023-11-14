@@ -284,117 +284,6 @@ footer {
 }
 
 @media (max-width: 543px) {
-  /*
-  footer {
-    background-color: #000000;
-    color: #fff;
-    text-align: center;
-    padding: 20px ;
-    bottom: 0;
-    width: 100%;
-  
-    height: auto;
-    height: auto;
-  }
-  .footer-grid {
-   
-
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap: 20px; 
-    max-width: 100%;
-    justify-content: center;
-    justify-items: center;
-   }
-  #services-footer{
-    display: none;
-  }
-  .footer-item {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-    vertical-align: baseline;
-    align-items: center;
-    width: 300px;
-}
-.menu {
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-}
-.footer-item-content {
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-}
-
-.footer-item-content a{
-  text-align: center;
-  justify-content: baseline;
-  justify-items: center;
-  font-size: 18px;
-}
-.footer-item-title {
-  display: flex;
-  align-items: center;
-  text-align: center !important;
-  justify-content: center;
-  justify-items: center;
-  width: 100%;
-}
-.footer-item-title a{
-  font-size: 22px;
-  text-align: center;
-  text-align: center !important;
-
-}
-
-.footer-grid-m {
-text-align: center !important;
-color: #ffffff;
-align-items: center;
-display: flex;
-flex-direction: column;
-}
-.footer-item-m {
-  text-align: start !important;
-  align-items: start;
-  max-width: fit-content;
-  padding-bottom: 30px;
-}
-.footer-item-title-m a {
-  text-align: start !important;
-  color: #fff;
- 
-}
-.footer-item-content-m{
-  color: #fff;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-}
-.menu-m {
-  text-align: start;
-  color: #fff;
-  vertical-align: baseline;
-  max-width: fit-content;
-  list-style: none;
-  padding: 0;
-}
-.menu-m a{
-  text-align: start;
-  color: #fff;
-  vertical-align: baseline;
-  max-width: fit-content;
-  list-style: none;
-  padding: 0;
-} */
 
 
 .footer-grid {
@@ -407,6 +296,7 @@ flex-direction: column;
   max-width: 100%;
   justify-content: center;
   justify-items: center;
+  padding-bottom: 60px;
 }
 #services-footer{
   display: none;
@@ -445,7 +335,7 @@ flex-direction: column;
   text-align: start;
   align-items: start;
   min-width: 100%;
-  padding-left: 20px;
+  padding-left: 0px;
   padding-right: 50px;
  
 }
@@ -453,5 +343,9 @@ footer .menu p i{
 
   padding-left: 20px;
   padding-right: 50px;
+}
+img.scale {
+  margin-top: 10px;
+  max-height: 100%;
 }
 }

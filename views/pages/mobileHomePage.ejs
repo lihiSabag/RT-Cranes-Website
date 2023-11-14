@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <%- include('../partials/head') %>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/mobile.css" />
+  </head>
+  <body>
+    <section id="home-section">
+      <header><%- include('../partials/mobileHeader') %></header>
+
+      <div class="video-container">
+        <video id="myVideo" autoplay muted loop playsinline>
+          <source src="/assets/crane-background-video.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="banner">
+        <div class="content">
+          <div class="center-icon">
+            <img
+              src="/assets/20-years-millenium-auto-dealership.png"
+              alt="Icon"
+              class="icon-image"
+            />
+          </div>
+          <h3>ש.ר מנופים</h3>
+          <h2>
+            עבודות מנוף מתקדמות והשכרת מנופים ומפעילים בהתאמה מלאה לפרויקט שלכם
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about-section" style="display: none;">
+      <div class="main">
+        <div class="text-container">
+          <h1>אודותינו</h1>
+          <div class="bar"></div>
+          <div class="about-text">
+            <p>
+              ש.ר מנופים היא חברה מובילה ומוכרת בשירותי השכרת מנופים ובתעשיית
+              ההרמה הכבדה. <br />החברה בעלת מוניטין של למעלה מ-20 שנות ניסיון
+              בתעשייה, והייתה חלק בלתי נפרד במספר רב של פרויקטים בקנה מידה
+              מהגדולים בארץ.<br />
+              החברה מספקת שירותים בתחומים: שירותי מנוף נייד R.T, מנופי שטח,
+              שירותי הנפה <br />וכח אדם מקצועי בציוד מכני, כולל מפעילי צמ"ה,
+              מנופאים, שופלים, מלגזות מסתובבות, מחפרים ועוד... <br />
+              <br />
+              אנו שואפים להרחיב ולשדרג כל הזמן את צי הכלים שלנו כדי להתאים
+              למגוון הרחב של קהל הלקוחות שלנו. כיום החברה מחזיקה בבעלותה צי
+              מנופים מסוג R.T הניתנים להשכרה ולמכירה.
+              <br />
+              <br />אנו מתחייבים לספק ללקוחותינו את המנופים המתאימים לכל פרויקט,
+              תוך תכנון כל פרויקט בזהירות ובשיקול דעת שמגיעים מניסיון של שנים
+              בהפעלת מנופים, על מנת להגיע לביצועים מיטביים ולשביעות רצון הלקוח.
+              <br />
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="img-container">
+        <!-- <img src="/assets/crane-img-aboutUs.jpg" alt="GRT880"> -->
+      </div>
+    </section>
+
+
+    <section class="services" id="services-section">
+      <h1>שירותי החברה</h1>
+      <div class="bar"></div>
+      <div class="services-grid">
+        <div class="service-item ">
+          <div
+            class="service-item-img"
+            id="rent"
+            
+          ></div>
+          <div
+            class="service-item-content"
+           
+          >
+            <div class="service-item-title"><h4>השכרת מנופים</h4></div>
+
+            <p>
+              בחברתנו ניתן להשכיר מנופים איכותיים ומקצועיים, בהתאמה מלאה לפרויקט
+              שלכם, לדרישות ולמבנה ולשטח , עם אפשרות להעמדת מפעיל לימי עבודה
+              לבחירתכם.
+            </p>
+           
+
+          </div>
+        </div>
+
+        <div class="service-item fade-in">
+          <div
+            class="service-item-img"
+            id="operator"
+            
+          ></div>
+          <div
+            class="service-item-content"
+            
+          >
+            <div class="service-item-title">
+              <h4>כח אדם ומפעילים</h4>
+            </div>
+
+            <p>
+              החברה מספקת כח אדם מקצועי בציוד מכני, כולל מפעילי צמ"ה, מנופאים,
+              שופלים, מלגזות מסתובבות, מחפרים ועוד. המפעילים שלנו בעלי ניסיון
+              עשיר המקפידים לפעול בהתאם לכל תקנות הבטיחות ופועלים בפריסה ארצית
+              ובזמינות גבוהה.
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="service-item fade-in" >
+          <div
+            class="service-item-img"
+            id="sale"
+            
+          ></div>
+          <div
+            class="service-item-content"
+            
+          >
+            <div class="service-item-title"><h4>מכירת מנופים</h4></div>
+            <p>
+              החברה מחזיקה צי מנופים מסוג R.T למכירה. המנופים מיובאים ונבדקים על
+              ידנו . תוך מתן ייעוץ מפורט, הבנת הצרכים והדרישות והתאמת הציוד
+              שיאפשר לחברתכם להגיע לביצועים הטובים ביותר.
+            </p>
+
+          </div>
+         
+        </div>
+      </div>
+    </section>
+    <section class="clients" id="clients-section">
+        <h1>מבין לקוחותינו</h1>
+        <div class="bar"></div>
+        <div class="clients-grid">
+          <div class="clients-item">
+            <div class="clients-item-content">
+              <img src="/assets/dankal-logo.png" class="icon" alt="דנקל" />
+            </div>
+          </div>
+  
+          <div class="clients-item">
+            <div class="clients-item-content">
+              <img
+                src="/assets/Olitsky-group-logo.png"
+                class="icon"
+                alt="קבוצת אוליצקי"
+              />
+            </div>
+          </div>
+  
+          <div class="clients-item">
+            <div class="clients-item-content">
+              <img src="/assets/intel-logo.png" class="icon" alt="intel" />
+            </div>
+          </div>
+  
+          <div class="clients-item">
+            <div class="clients-item-content">
+              <img
+                src="/assets/ashdodo-port-logo.png"
+                class="icon"
+                alt="נמל אשדוד"
+              />
+            </div>
+          </div>
+          <div class="clients-item">
+            <div class="clients-item-content">
+              <img
+                src="/assets/SolelBone-logo.png"
+                class="icon"
+                alt="סולל בונה"
+              />
+            </div>
+          </div>
+          <div class="clients-item">
+            <div class="clients-item-content">
+              <img
+                src="/assets/telAviv-Logo.png"
+                class="icon"
+                alt="עיריית תל אביב"
+              />
+            </div>
+          </div>
+          <div class="clients-item">
+            <div class="clients-item-content">
+              <img
+                src="/assets/IsraelElectric.png"
+                class="icon"
+                alt="חברת חשמל"
+              />
+            </div>
+          </div>
+          <div class="clients-item">
+            <div class="clients-item-content">
+              <img src="/assets/Danyacebus.png" class="icon" alt="דניה סיבוב" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-container" id="catalog-section">
+        <!-- <link rel="stylesheet" href="/css/cranesCatalog.css" /> -->
+  
+        <h1>קטלוג מנופים להשכרה</h1>
+  
+        <div class="catalog-grid">
+          <!-- Line 1 -->
+  
+          <div class="catalog-item">
+            <div class="catalog-item-content">
+              <img src="/assets/GRT8100.png" alt="GRT8100" />
+            </div>
+  
+            <div class="catalog-item-title">
+              <a href="/itemGRT8100.ejs">GRT8100</a>
+            </div>
+          </div>
+  
+          <div class="catalog-item">
+            <div class="catalog-item-content">
+              <img src="/assets/RT765E.png" alt="GRT880" />
+            </div>
+            <div class="catalog-item-title">RT765E</div>
+          </div>
+  
+          <div class="catalog-item">
+            <div class="catalog-item-content">
+              <img src="/assets/RT530E.png" alt="GRT880" />
+            </div>
+            <div class="catalog-item-title">RT530E</div>
+          </div>
+          <!-- Line 2 -->
+  
+          <div class="catalog-item hidden">
+            <div class="catalog-item-content">
+              <img src="/assets/GRT880.png" alt="GRT880" />
+            </div>
+            <div class="catalog-item-title">GRT880</div>
+          </div>
+          <div class="catalog-item hidden">
+            <div class="catalog-item-content">
+              <img src="/assets/GRT880.png" alt="GRT880" />
+            </div>
+            <div class="catalog-item-title">GRT880</div>
+          </div>
+          <div class="catalog-item hidden">
+            <div class="catalog-item-content">
+              <img src="/assets/GRT880.png" alt="GRT880" />
+            </div>
+            <div class="catalog-item-title">GRT880</div>
+          </div>
+  
+          <!-- Line 3 -->
+          <div class="catalog-item hidden">
+            <div class="catalog-item-content">
+              <img src="/assets/GRT880.png" alt="GRT880" />
+            </div>
+            <div class="catalog-item-title">GRT880</div>
+          </div>
+          <div class="catalog-item hidden">
+            <div class="catalog-item-content">
+              <img src="/assets/GRT880.png" alt="GRT880" />
+            </div>
+            <div class="catalog-item-title">GRT880</div>
+          </div>
+          <div class="catalog-item hidden">
+            <div class="catalog-item-content">
+              <img src="/assets/GRT880.png" alt="GRT880" />
+            </div>
+            <div class="catalog-item-title">GRT880</div>
+          </div>
+        </div>
+  
+        <p style="text-align: center">
+          <a
+            class="button"
+            id="full-catalog-button"
+            href="javascript:void(0);"
+            onclick="toggleHiddenRows()"
+          >
+            לקטלוג המלא &gt;
+          </a>
+        </p>
+      </section>
+    <section class="contact" id="contact-section">
+      <div class="container">
+        <div class="info-container">
+          <div class="info-form">
+            <h1 id="name">פרטי יצירת קשר</h1>
+
+            <ul id="menu" class="menu">
+              <p id="city">
+                <i class="fa fa-home fa-fw"></i>&nbsp;&nbsp; אשדוד , רוגוזין 9
+              </p>
+              <p id="phone">
+                <i class="fa fa-phone fa-fw"></i>&nbsp;&nbsp; 050-9088120
+              </p>
+              <p>
+                <i class="fa fa-envelope fa-fw"></i>&nbsp;&nbsp;
+                shai.manofin@gmail.com
+              </p>
+              <p id="time">
+                <i class="fa fa-clock-o fa-fw"></i>&nbsp;&nbsp; א'-ה', 8:00 -
+                19:00
+              </p>
+            </ul>
+          </div>
+        </div>
+        <div class="form-container">
+          <h4 id="name">או השאירו הודעה ונשמח לסייע בכל שאלה</h4>
+          <div id="messageStatus" style="display: none">
+            <p
+              style="
+                font-size: 22px;
+                color: rgb(255, 74, 74);
+                padding-top: 0;
+                padding-bottom: 20px;
+              "
+            >
+              פנייתך התקבלה בהצלחה! אנו נחזור אליך בהקדם האפשרי.
+            </p>
+          </div>
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="/send-email"
+            method="post"
+            enctype="text/plain"
+          >
+            <div class="form-group inline">
+              <div class="form-group">
+                <label for="fullName">שם מלא:</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="*שם מלא"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="mobile">מספר טלפון:</label>
+                <input
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  placeholder="*טלפון"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">כתובת דוא"ל:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="*אימייל"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message">תוכן ההודעה:</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="הכנס את תוכן ההודעה שלך"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-button">שלח הודעה</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <%- include('../partials/footer') %>
+    <div class="bottom-menu">
+      <a href="tel:050-9088-120" class="bottom-menu-button" id="call-button">
+        <span class="bottom-menu-text-label-offset">
+          <i class="fa fa-phone"></i>
+        </span>
+      </a>
+      <a
+      href="/homePage#contact-section"
+        class="bottom-menu-button" id="email-button"
+      >
+        <span class="touchy-email-text-label-offset">
+          <i class="fa fa-envelope fa-fw"></i>
+        </span>
+      </a>
+      <a
+      onclick="sendMessageWhatsApp()"
+      class="bottom-menu-button" id="whatsApp-button"
+    >
+      <span class="touchy-email-text-label-offset">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </span>
+    </a>
+
+    </div>
+
+    <script src="https://cdn.enable.co.il/licenses/enable-L22260wfos04j6vz-0923-50759/init.js"></script>
+  </body>
+  <script>
+    // setActivePage("home");
+
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Submit the form using fetch
+        fetch("/send-email", {
+          method: "POST",
+          body: new FormData(this),
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            // Display the success message in the designated div
+            const message = document.getElementById("messageStatus");
+            const successMessage =
+              "פנייתך התקבלה בהצלחה! אנו נחזור אליך בהקדם האפשרי.";
+            message.innerText = successMessage;
+            message.style.display = "block"; // Show the success message
+
+            clearFormInputs();
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+            const message = document.getElementById("messageStatus");
+            message.innerText =
+              "אירעה שגיאה בעת שליחת האימייל. אנא נסה שוב מאוחר יותר.";
+            message.style.display = "block"; // Show the error message
+            clearFormInputs();
+          });
+      });
+      function sendMessageWhatsApp() {
+        const encodedMessage = encodeURIComponent('היי , הגעתי דרך האתר שלכם , אשמח ליצור קשר');
+        const phoneNumber = '+972509088120';  // Replace with the desired phone number
+
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+window.open(whatsappUrl, '_blank');
+}
+
+// Trigger the animation on initial load
+animateOnScroll();
+
+    function clearFormInputs() {
+      const form = document.getElementById("contact-form"); // Replace with your form ID
+      const inputs = form.querySelectorAll("input");
+
+      inputs.forEach((input) => {
+        if (input.type !== "submit") {
+          input.value = "";
+        }
+      });
+
+      // Clear the textarea
+      const textarea = form.querySelector("textarea");
+      textarea.value = "";
+    }
+    function toggleHiddenRows() {
+      const hiddenRows = document.querySelectorAll(".catalog-item.hidden");
+      const btn = document.getElementById("full-catalog-button");
+      hiddenRows.forEach((item) => {
+        if (item.style.display === "none" || item.style.display === "") {
+          item.style.display = "block";
+          document.getElementById("full-catalog-button").innerHTML =
+            " סגור קטלוג &gt;";
+        } else {
+          item.style.display = "none";
+          const section = document.getElementById("catalog-section");
+          section.scrollIntoView({ behavior: "auto" });
+          document.getElementById("full-catalog-button").innerHTML =
+            " לקטלוג המלא &gt;";
+        }
+      });
+    }
+  </script>
+</html>

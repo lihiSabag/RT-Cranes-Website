@@ -54,7 +54,9 @@ app.get("/itemGRT8100", (req, res) => {
 app.get("/itemGRT8100En", (req, res) => {
   res.render("pages/itemGRT8100En");
 });
-
+app.get("/mobileHomePage", (req, res) => {
+  res.render("pages/mobileHomePage");
+});
 // Endpoint to handle form submission
 app.post("/send-email", (req, res) => {
   const { fullName, mobile, email, message } = req.body;

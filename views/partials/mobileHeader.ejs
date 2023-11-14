@@ -1,0 +1,186 @@
+<header>
+    <link rel="stylesheet" href="/css/mobile.css" type="text/css" />
+
+  
+  
+    <div class="navbar-mobile-wrapper">
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="language-switcher" style="padding-left: 10px;
+      padding-right: 15px;">
+        <a onclick="switchLanguage('he')">
+          <img src="/assets/hw_icon.png" class="icon" alt="Hebrew language" />
+        </a>
+        <a onclick="switchLanguage('en')">
+          <img src="/assets/en_icon.png" class="icon" alt="English language" />
+        </a>
+      </div>
+    </div>
+    <div class="navbar-mobile-content-wrapper">
+      <div class="menu-icon close" onclick="closeMenu()">
+        <i class="fa fa-times"></i>
+      </div>
+      <div class="navbar-mobile">
+        <ul>
+          <li>
+            <a
+              id="home"
+              name="home-section"
+              class="menu-link active"
+              onclick="scrollToSectionMobile('home-section')"
+              >דף הבית</a
+            >
+          </li>
+          <li>
+            <a
+              name="catalog-section"
+              class="menu-link"
+              onclick="scrollToSectionMobile('catalog-section')"
+              >קטלוג מנופים</a
+            >
+          </li>
+          <li>
+            <a
+              name="services-section"
+              class="menu-link"
+              onclick="scrollToSectionMobile('services-section')"
+              >שירותים</a
+            >
+          </li>
+          <li>
+            <a
+              name="about-section"
+              class="menu-link"
+              onclick="scrollToSectionMobile('about-section')"
+              >אודות</a
+            >
+          </li>
+          <li>
+            <a
+              name="contact-section"
+              onclick="scrollToSectionMobile('contact-section')"
+              class="menu-link"
+              >צור קשר</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".navbar-mobile-content-wrapper");
+      const menuW = document.querySelector(".navbar-mobile-wrapper");
+  
+      if (menu.style.display === "block") {
+        menu.style.display = "none";
+        menuW.style.display = "flex";
+      } else {
+        menu.style.display = "block";
+        menuW.style.display = "none";
+      }
+    }
+    function closeMenu() {
+      const menu = document.querySelector(".navbar-mobile-content-wrapper");
+      const menuW = document.querySelector(".navbar-mobile-wrapper");
+  
+      if (menuW.style.display === "block") {
+        menu.style.display = "block";
+        menuW.style.display = "none";
+      } else {
+        menu.style.display = "none";
+        menuW.style.display = "flex";
+      }
+    }
+    function switchLanguage(language) {
+        
+        const htmlElement = document.querySelector("html");
+        htmlElement.lang = language;
+    
+        if (language === "he") {
+          htmlElement.setAttribute("dir", "rtl");
+          homepageURL = "/homePage";
+          window.location.href = homepageURL;
+        } else {
+          
+          htmlElement.setAttribute("dir", "ltr");
+          homepageURL = "/homePageEn";
+          window.location.href = homepageURL;
+        }
+      }
+    // function switchLanguage(language) {
+    //   console.log("hebrew home");
+    //   console.log("languuu= ", language);
+    //   const currentPagePathname = window.location.pathname;
+  
+    //   const htmlElement = document.querySelector("html");
+    //   console.log("lang= ", htmlElement.lang);
+    //   if (language === "en" && htmlElement.lang == "he") {
+    //     console.log("yes-hw");
+    //     htmlElement.setAttribute("dir", "ltr");
+    //     console.log("path",currentPagePathname);
+     
+    //     console.log("hash -",   window.location.hash);
+  
+    //     homepageURL = currentPagePathname + "En"+window.location.hash;
+    //     window.location.href = homepageURL;
+    //   } else if (language === "he" && htmlElement.lang == "en") {
+    //     htmlElement.setAttribute("dir", "ltr");
+    //     homepageURL = "/homePage";
+    //     window.location.href = homepageURL;
+    //   } else if (language === "he" && htmlElement.lang == "he") {
+        
+    //   } else if (language === "en" && htmlElement.lang == "en") {
+    //   } else if (language === "en") {
+    //     homepageURL = "/homePageEn";
+    //     window.location.href = homepageURL;
+    //   } else if (language === "he" ) {
+    //     homepageURL = "/homePage";
+    //     window.location.href = homepageURL;
+    //   }
+    //   else{
+    //     console.log("ELSE -he");
+    //   }
+    //   console.log("ele",htmlElement);
+    // }
+  
+    // function setActivePage(newPage) {
+    //   const currentPage = document.querySelector(".menu-link.active");
+    //   if (currentPage) {
+    //     currentPage.classList.remove("active");
+    //   }
+  
+    //   const newPageLink = document.getElementById(newPage);
+    //   if (newPageLink) {
+    //     newPageLink.classList.add("active");
+    //   }
+    // }
+    function setActivePage(newPage) {
+      const currentPage = document.querySelector(".menu-link.active");
+      if (currentPage) {
+        currentPage.classList.remove("active");
+      }
+  
+      const newPageLink = document.getElementsByName(newPage);
+      if (newPageLink[0]) {
+        newPageLink[0].classList.add("active");
+      }
+    }
+    function scrollToSectionMobile(sectionId) {
+      setActivePage(sectionId);
+  
+      closeMenu();
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  
+    function scrollToSection(sectionId) {
+  
+      setActivePage(sectionId);
+  
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+  
