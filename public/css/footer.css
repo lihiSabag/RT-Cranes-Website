@@ -193,7 +193,7 @@ footer {
   width: 150px;
 }
 #ltd-footer{
-  width: 110px;
+  /* width: 110px; */
 }
 
 .footer-item-content a img.scale{
@@ -336,7 +336,7 @@ footer {
   align-items: start;
   min-width: 100%;
   padding-left: 0px;
-  padding-right: 50px;
+  padding-right: 30px;
  
 }
 footer .menu p i{

@@ -51,12 +51,35 @@ app.get("/services", (req, res) => {
 app.get("/itemGRT8100", (req, res) => {
   res.render("pages/itemGRT8100");
 });
+app.get("/itemGRT770E", (req, res) => {
+  res.render("pages/itemGRT770E");
+});
+app.get("/itemGRT530E-2", (req, res) => {
+  res.render("pages/itemGRT530E-2");
+});
+
 app.get("/itemGRT8100En", (req, res) => {
   res.render("pages/itemGRT8100En");
+});
+app.get("/itemGRT770EEn", (req, res) => {
+  res.render("pages/itemGRT770EEn");
+});
+app.get("/itemGRT530E-2En", (req, res) => {
+  res.render("pages/itemGRT530E-2En");
 });
 app.get("/mobileHomePage", (req, res) => {
   res.render("pages/mobileHomePage");
 });
+app.get("/projects", (req, res) => {
+  res.render("pages/projects");
+});
+app.get("/soon", (req, res) => {
+  res.render("pages/soon");
+});
+app.get("/soonEn", (req, res) => {
+  res.render("pages/soonEn");
+});
+
 // Endpoint to handle form submission
 app.post("/send-email", (req, res) => {
   const { fullName, mobile, email, message } = req.body;
@@ -76,7 +99,7 @@ app.post("/send-email", (req, res) => {
 
   const mailOptions = {
     from: myEmail,
-    to: "roaslihi@gmail.com", // Replace with your email
+    to: "roaslihi@gmail.com", 
     subject: "New Contact Form Submission",
     text: `Full Name: ${fullName}\nPhone: ${mobile}\nEmail: ${email}\n\n${message}`,
   };

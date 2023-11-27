@@ -5,71 +5,76 @@
     <title>Crane Information</title>
     <link rel="stylesheet" href="/css/catalogItem.css" />
   </head>
-  <header><%- include('../partials/header') %></header>
-  <body>
+  <header><%- include('../partials/enHeader') %></header>
+  <body style="direction: ltr;">
     <section class="sub-header">
       
-      <h1>השכרת מנופים</h1>
+      <h1>Cranes Rental </h1>
       <p style="text-align: center">
-        <a class="link" href="/homePage">דף הבית</a>&gt
-        <a class="link"  onclick="BackToCatalog()">קטלוג מנופים</a>&gt
-        <a class="link" style="cursor: default;"> GRT8100-1  </a>
+        <a class="link" href="/homePageEn">Home</a>&gt;
+        <a class="link"  onclick="BackToCatalog()">Cranes Catalog </a>&gt;
+        <a class="link" style="cursor: default;"> RT770-E  </a>
       </p>
     </section>
 
     <section class="content">
-            <h2 style="direction: ltr;">GRT8100-1 דגם GROVE מנוף</h2>
+            <h2>GROVE model RT770-E</h2>
 
       <div class="container">
         <div class="gallery">
-          <div class="mySlides ">
-            <div class="img-container">
-              <img src="/assets/GRT8100.png" alt="GRT8100" />
+            <div class="mySlides ">
+              <div class="img-container">
+                <img src="/assets/RT770e-1.png" alt="RT770E black" />
+              </div>
             </div>
-          </div>
-
-          <div class="mySlides ">
-            <div class="img-container">
-              <img src="/assets/GRT8100-profile.jpg" alt="GRT8100-profile" />
+  
+            <div class="mySlides ">
+              <div class="img-container">
+                <img src="/assets/RT770e-2.jpg" alt="RT770E" />
+              </div>
             </div>
-          </div>
-          <div class="mySlides ">
-            <div class="img-container">
-              <img src="/assets/GRT8100-outriggers.jpg" alt="GRT8100-outriggers" />
+            <div class="mySlides ">
+              <div class="img-container">
+                <img src="/assets/RT770e-3.jpg" alt="RT770E" />
+              </div>
             </div>
+            <div class="mySlides ">
+              <div class="img-container">
+                <img src="/assets/RT770e-4.jpg" alt="GRT770E" />
+              </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
           </div>
-          <a class="prev" onclick="plusSlides(-1)">❯</a>
-          <a class="next" onclick="plusSlides(1)">❮</a>
-        </div>
 
         
 
         <div class="crane-details">
           <form class="details" id="details-form">
             <div class="input-box">
-              <label for="max-capacity">קיבולת מקסימלית</label>
-              <input placeholder="100 t"readonly/>
+              <label for="max-capacity">Max capacity </label>
+              <input placeholder="65 t"readonly/>
             </div>
             <div class="input-box">
-              <label for="weight" >משקל כולל
+              <label for="weight" >Total gross weight 
               </label>
-              <input type="number"placeholder="57,220 kg"readonly/>
+              <input type="number"placeholder="44,135 kg"readonly/>
             </div>
             <div class="input-box">
-              <label for="boom-length" >אורך בום ראשי</label>
-              <input type="text"placeholder="12 m - 47 m" readonly />
+              <label for="boom-length" >Main boom length </label>
+              <input type="text"placeholder="11 m - 42 m" readonly />
             </div>
             <div class="input-box">
-              <label for="tip-height">גובה קצה מקסימלי</label>
+              <label for="tip-height">Max tip height</label>
               <input
-                type="number" placeholder="72.9 m"readonly/>
+                type="number" placeholder="67.4 m"readonly/>
             </div>
           </form>
         </div>
       </div>
 
     </section>
-    <footer><%- include('../partials/footer') %></footer>
+    <footer><%- include('../partials/enFooter') %></footer>
     <script src="https://cdn.enable.co.il/licenses/enable-L22260wfos04j6vz-0923-50759/init.js"></script>
   </body>
 

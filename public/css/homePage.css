@@ -51,7 +51,19 @@ body {
   height: 75vh;
   width: 100%;
 }
-
+#not-found{
+  /* padding-top: 100px;
+  background-image: url("/assets/not-found-page.jpg");
+  background-size:cover;
+  background-position: right;
+  background-repeat: no-repeat; */
+}
+#not-found-icon {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
 .center-icon {
   text-align: center;
 }
@@ -936,6 +948,26 @@ i {
 .bottom-menu{
   display: none;
 }
+
+
+#soon{
+  background-color: #000000;
+}
+.soon-subtitle{
+  padding-bottom: 20px;
+}
+.center-icon {
+  text-align: center;
+ 
+}
+
+.icon-image-soon {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 300px;
+  height: auto;
+  
+}
 @media (max-width: 1350px) {
   .banner {
     height: 80vh;
@@ -951,7 +983,9 @@ i {
     /* direction: rtl; */
 
   }
-
+  .service-banner-item-content.eng{
+    height: 350px;
+  }
   .service-banner-item-content p {
 
     padding-top: 0px;
@@ -1103,7 +1137,10 @@ i {
     /* width: 225px; */
     height: 400px;
   }
-
+  .service-banner-item-content.eng {
+    width: 225px;
+    height: 400px;
+  }
   .service-banner-item {
     margin-top: -50px;
   }
@@ -1255,6 +1292,10 @@ i {
   .service-banner-item-content {
     /* width: 430px; */
     height: 400px;
+  }
+  .service-banner-item-content.eng {
+    width: 450px;
+    height: 300px;
   }
 
   .service-banner-item {
@@ -1457,7 +1498,13 @@ i {
 
 
   }
+  .service-banner-item-content.eng {
 
+    width: 300px;
+   
+
+
+  }
   .service-banner-item .button {
 
     display: none;
@@ -1693,5 +1740,12 @@ opacity: 1 !important;
 .clients-item-content{
   width: 90%;
   min-height: 150px;
+}
+
+.info-container .info-form {
+  width: 310px;
+
+
+
 }
 }

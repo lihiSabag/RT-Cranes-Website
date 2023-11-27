@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .project-section{
+    margin-top: 100px;
+  }
+  h1 {
+    text-align: center;
+    padding: 20px;
+    color: #040303;
+  }
+  
+  main {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .project-container {
+    display: flex;
+    max-width: 600px; /* Adjust as needed */
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .project-container:hover {
+    transform: scale(1.05);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    direction: rtl;
+  }
+  
+  p {
+    color: #555;
+    direction: rtl;
+  }
+  

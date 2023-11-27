@@ -25,7 +25,7 @@
               class="icon-image"
             />
           </div>
-          <h3>S.R CRANES</h3>
+          <h3>R.T CRANES LTD</h3>
           <h2>
             Advanced Crane Works and Rentals Tailored to Your Project Needs
           </h2>
@@ -122,16 +122,16 @@
 
         <div class="catalog-item">
           <div class="catalog-item-content">
-            <img src="/assets/RT765E.png" alt="GRT880" />
+            <img src="/assets/RT770E-1.png" alt="GRT770-E" />
           </div>
-          <div class="catalog-item-title">RT765E</div>
+          <div class="catalog-item-title"><a href="/itemGRT770EEn">RT770E</a></div>
         </div>
 
         <div class="catalog-item">
           <div class="catalog-item-content">
-            <img src="/assets/RT530E.png" alt="GRT880" />
+            <img src="/assets/RT530E.png" alt="GRT530E" />
           </div>
-          <div class="catalog-item-title">RT530E</div>
+          <div class="catalog-item-title"><a href="/itemGRT530E-2En">RT530E-2</a></div>
         </div>
 
         <!-- Line 2 -->
@@ -217,7 +217,7 @@
           >
             <p>
               <br><br>
-              S.R Cranes is a reputable crane company with over 20 years of
+              R.T Cranes ltd is a reputable crane company with over 20 years of
               experience in the industry. We have been an integral part of many
               major projects in Israel and offer customized Solutions and
               services for Your Project including mobile and off-road crane
@@ -256,7 +256,7 @@
             <h5>Focus on Safety</h5>
 
             <p>
-              Safety is our top priority at S.R Cranes. We adhere to strict
+              Safety is our top priority at R.T Cranes. We adhere to strict
               safety protocols and conduct regular maintenance on our cranes to
               ensure they are in optimal condition. You can have peace of mind
               knowing that your project will be handled with utmost care and
@@ -408,19 +408,25 @@
                 <i
                   class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"
                 ></i
-                >&nbsp;&nbsp; Rogozin 9, Ashdod, Israel
+                >&nbsp;&nbsp; Rogozin 3, Ashdod, Israel
               </p>
               <p id="phone">
                 <i
                   class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"
                 ></i
-                >&nbsp;&nbsp; +972-50-9088120
+                >&nbsp;&nbsp;Yossi: +972-50-4000-811
+              </p>
+              <p id="phone">
+                <i
+                  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"
+                ></i
+                >&nbsp;&nbsp;Office: +972-77-404-7-406
               </p>
               <p>
                 <i
                   class="fa fa-envelope-o fa-fw w3-margin-right w3-large w3-text-teal"
                 ></i
-                >&nbsp;&nbsp; shai.manofin@gmail.com
+                >&nbsp;&nbsp; RTCRANES.1@gmail.com
               </p>
               <p id="time">
                 <i
@@ -486,6 +492,35 @@
       </div>
     </section>
     <%- include('../partials/enFooter') %>
+    <div class="bottom-menu">
+      <a href="tel:+97250-9088-120" class="bottom-menu-button" id="call-button">
+        <span class="bottom-menu-text-label-offset">
+          <i class="fa fa-phone"></i>
+        </span>
+      </a>
+      <a
+      href="/homePage#contact-section"
+        class="bottom-menu-button" id="email-button"
+      >
+        <span class="touchy-email-text-label-offset">
+          <i class="fa fa-envelope fa-fw"></i>
+        </span>
+      </a>
+      <a
+      onclick="sendMessageWhatsApp()"
+      class="bottom-menu-button" id="whatsApp-button"
+    >
+      <span class="touchy-email-text-label-offset">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </span>
+    </a>
+    <a href="https://www.facebook.com/rt.cranes1" class="bottom-menu-button" id="facebook-button">
+      <span class="touchy-email-text-label-offset">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+      </span>
+    </a>
+    </div>
+
     <script src="https://cdn.enable.co.il/licenses/enable-L22260wfos04j6vz-0923-50759/init.js"></script>
   </body>
   <script>
@@ -548,5 +583,14 @@ textarea.value = "";
         }
       });
     }
+
+    function sendMessageWhatsApp() {
+        const encodedMessage = encodeURIComponent('היי , הגעתי דרך האתר שלכם , אשמח ליצור קשר');
+        const phoneNumber = '+972504000811';  // Replace with the desired phone number
+
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+window.open(whatsappUrl, '_blank');
+}
   </script>
 </html>
