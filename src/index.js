@@ -85,8 +85,10 @@ app.post("/send-email", (req, res) => {
   const { fullName, mobile, email, message } = req.body;
   const myEmail = process.env.EMAIL;
   const password = process.env.PASSWORD;
-  console.log('Email:', myEmail);
-  console.log('Password:', password);
+  console.log("Full Name:", fullName);
+  console.log("Mobile:", mobile);
+  console.log("Email:", email);
+  console.log("Message:", message);
   
   // Create a transporter using nodemailer
   const transporter = nodemailer.createTransport({
@@ -110,6 +112,7 @@ app.post("/send-email", (req, res) => {
       res.status(500).send("Error sending email");
     } else {
       console.log("Email sent:", info.response);
+    
       res.status(200).send("Email sent successfully");
     }
   });

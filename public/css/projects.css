@@ -1,7 +1,12 @@
+@import url(https://db.onlinewebfonts.com/c/e89eb1cff9eb261b0d77a4dea27f1ef1?family=Helvetica+W01+Light);
+@import url(https://db.onlinewebfonts.com/c/c3ebc6b1a59605f4d31dd15902299601?family=Open+Sans+Hebrew+Light);
+@import url(https://db.onlinewebfonts.com/c/0fb16d380d5f21f0b33ccfc113cde2a3?family=Open+Sans+Hebrew+Bold);
+
 body {
-    font-family: 'Arial', sans-serif;
+    
     margin: 0;
     padding: 0;
+    background-color:rgb(230 230 230);
   }
   .project-section{
     margin-top: 100px;
@@ -9,7 +14,24 @@ body {
   h1 {
     text-align: center;
     padding: 20px;
-    color: #040303;
+
+    font-size: 52px;
+  font-family:  "Open Sans Hebrew Bold";
+  /* color: #dfdfdf; */
+  /* color: rgb(64, 64, 85); */
+   color: rgb(90 95 99);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  }
+  .bar {
+    text-align: center;
+    width: 116px;
+    height: 10px;
+    background-color: #e2c068;
+    margin: 3px 0;
+    position: relative;
+    margin: 10px 0px 32px 0;
+    left: 50%;
   }
   
   main {
@@ -18,11 +40,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+   
   }
-  
+  #book{
+    height: 500px;
+  }
   .project-container {
     display: flex;
-    max-width: 600px; /* Adjust as needed */
+    max-width: 600px;
     margin: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -34,16 +59,44 @@ body {
     transform: scale(1.05);
   }
   
+   .container {
+    text-align: center;
+    /* transition: transform 0.2s ease-in-out; */
+    padding-bottom: 30px;
+    height: 100%;
+    
+    
+  }
+  .container:hover {
+    /* transform: scale(1.05); */
+  }
+   .container-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color:rgb(64, 64, 85);
+    color: #dfdfdf;
+    font-family:  "Open Sans Hebrew light";
+   
+  }
+  .image-container {
+    display: flex;
+    
+  }
+ 
   img {
     max-width: 100%;
-    height: auto;
+    height: 500px;
     object-fit: cover;
+    padding-left: 1px;
+    padding-right: 1px;
   }
+  
+  
   
   .project-info {
     padding: 20px;
   }
-  
   h2 {
     margin-top: 0;
     direction: rtl;
@@ -53,4 +106,26 @@ body {
     color: #555;
     direction: rtl;
   }
-  
+  #publication .top-toolbar{
+    display: none;
+  }
+
+  .top-toolbar[data-v-503365c6]{
+    display: none;
+  }
+  .top-toolbar{
+    display: none;
+  }
+  .bottom-toolbar-frame[data-v-201fc451] {
+    display: none !important;
+  }
+  #publication .bottom-toolbar-frame {
+    height: 5px !important;
+}
+@media (max-width: 490px) {
+  h1 {
+    font-size: 24px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}
