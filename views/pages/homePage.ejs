@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="he">
   <head>
+    <title>מנופי אר.טי בע"מ</title>
     <%- include('../partials/head') %>
     <link
       rel="stylesheet"
@@ -23,7 +24,7 @@
           <div class="center-icon">
             <img
             src="/assets/40-years.png"
-              alt="Icon"
+              alt="40-years experience icon"
               class="icon-image"
             />
           </div>
@@ -245,7 +246,7 @@
 
         <div class="clients-item">
           <div class="clients-item-content">
-            <img src="/assets/intel-logo.png" class="icon" alt="intel" />
+            <img src="/assets/intel-logo.png" class="icon" alt="אינטל" />
           </div>
         </div>
 
@@ -322,11 +323,11 @@
           <button
             class="service-item-img"
             id="operator"
-            onclick="window.location.href='/operators'"
+            
           ></button>
           <div
             class="service-item-content"
-            onclick="window.location.href='/operators'"
+            
           >
             <div class="service-item-title">
               <h4>כח אדם ומפעילים</h4>
@@ -348,11 +349,11 @@
           <button
             class="service-item-img"
             id="sale"
-            onclick="window.location.href='/cranesSale'"
+            
           ></button>
           <div
             class="service-item-content"
-            onclick="window.location.href='/cranesSale'"
+            
           >
             <div class="service-item-title"><h4>מכירת מנופים</h4></div>
             <p>
@@ -498,16 +499,9 @@
   <script>
     // setActivePage("home");
 
-    document
-      .getElementById("contact-form")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
-
+    document.getElementById("contact-form").addEventListener("submit", function (event) {event.preventDefault();
         // Submit the form using fetch
-        fetch("/send-email", {
-          method: "POST",
-          body: new FormData(this),
-        })
+    fetch("/send-email", {method: "POST",body: new FormData(this),})
           .then((response) => response.text())
           .then((data) => {
             // Display the success message in the designated div
