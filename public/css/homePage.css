@@ -966,6 +966,24 @@ i {
   height: auto;
   
 }
+
+
+.project-section{
+  margin-top: 100px;
+}
+.project-section h1 {
+  text-align: center;
+  padding: 20px;
+
+  font-size: 52px;
+font-family:  "Open Sans Hebrew Bold";
+/* color: #dfdfdf; */
+/* color: rgb(64, 64, 85); */
+ color: rgb(90 95 99);
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+
 @media (max-width: 1350px) {
   .banner {
     height: 80vh;
@@ -1748,5 +1766,10 @@ opacity: 1 !important;
 }
 #services-section{
   display: none;
+}
+.project-section h1 {
+  font-size: 24px;
+  padding: 0;
+  margin-bottom: 0;
 }
 }

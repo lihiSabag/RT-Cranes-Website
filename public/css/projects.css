@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color:rgb(230 230 230);
+    /* direction: rtl; */
   }
   .project-section{
     margin-top: 100px;
