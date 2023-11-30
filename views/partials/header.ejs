@@ -248,8 +248,9 @@
     setActivePage(sectionId);
 
     closeMenu();
-    const section = document.getElementById(sectionId);
-    section.scrollIntoView({ behavior: "smooth" });
+    
+    window.location.href = '/homePage#' +sectionId;
+    // section.scrollIntoView({ behavior: "smooth" });
   }
 
   function scrollToSection(sectionId) {
