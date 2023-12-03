@@ -79,7 +79,9 @@ app.get("/soon", (req, res) => {
 app.get("/soonEn", (req, res) => {
   res.render("pages/soonEn");
 });
-
+app.get("/sitemap", (req, res) => {
+  res.render("pages/sitemap.xml");
+});
 
 // Endpoint to handle form submission
 app.post("/send-email", (req, res) => {
